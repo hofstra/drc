@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Access Scholar"
-categories: []
+categories: projects
 tags: []
 published: True
 

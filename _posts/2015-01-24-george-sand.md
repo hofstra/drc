@@ -1,7 +1,7 @@
 ---
 layout: post
 title: George Sand Association
-categories: []
+categories: projects
 tags: []
 author: "David A. Powell"
 published: True

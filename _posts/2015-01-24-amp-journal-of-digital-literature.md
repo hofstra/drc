@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AMP: Journal of Digital Literature"
-categories: []
+categories: projects
 tags: []
 author: Janet Kaplan
 published: True

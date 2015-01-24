@@ -2,14 +2,24 @@
 layout: default
 ---
 
-<section>
+<div class="hero">
+	<div class="hero-inner">
+    	<div class="hero-copy">
+			<h1>Hearing, Reading, and Seeing Early 20th-Century Egypt</h1>
+			<p>Hearing, Reading, and Seeing Early 20th-Century Egypt explores popular representations of Egypt created by local Egyptians, Western Europeans, and North Americans. Specifically, it is an archival repository of photographic images, sound recordings, silent films, and film magazines that focus on visual and aural conceptions of Egypt.</p>	
+		    <button>Learn More</button>
+		</div>
+	</div>
+</div>
+
+<!-- <section>
 <div class="flex-boxes">
   {% for post in site.posts %}
-    <a href="javascript:void(0)" class="flex-box{% cycle ' flex-box-big', '', '' %}">
+    <a href="{{ post.url }}" class="flex-box{% cycle ' flex-box-big', '', '' %}">
       <h1 class="flex-title">{{ post.title }}</h1>
-      <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
       <p>{{ post.excerpt }}</p>
     </a>
   {% endfor %}
 </div>
 </section>
+ -->

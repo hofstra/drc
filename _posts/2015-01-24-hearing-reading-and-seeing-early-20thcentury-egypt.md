@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hearing, Reading, and Seeing Early 20th-Century Egypt"
-categories: []
+categories: projects
 tags: []
 author: Mario Ruiz
 published: True

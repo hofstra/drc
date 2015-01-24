@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Digital Van Mander
-categories: []
+categories: projects
 tags: []
 author: Martha Hollander
 published: True

@@ -1,8 +1,83 @@
+body {
+  background-color: whitesmoke;
+}
+
 section {
   @include outer-container;
   // aside { @include span-columns(3); }
   // article { @include span-columns(9); }
 }
+
+
+// Home page styles
+.hero {  
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-border-radius: 3px !default;
+  $base-accent-color: #477DCA !default;
+  $large-screen: em(860) !default;
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $hero-background-top: #7F99BE; 
+  $hero-background-bottom: #20392B;
+  $hero-color: white;
+  $gradient-angle: 10deg;
+  $hero-image: '/images/011-theda-bara-theredlist.jpg';
+
+  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
+
+  .hero-logo img {
+    height: 4em;
+    margin-bottom: 1em;
+  }
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    color: $hero-color;
+    margin: auto;
+    padding: 3.5em;
+    text-align: center;
+
+    .hero-copy {
+      background-color: rgba(180, 180, 144, 0.8);       
+      text-align: center;
+      padding-bottom: 1em;
+      
+      h1 {
+        font-size: 1.6em;
+        margin: 1em auto 0 auto; 
+        padding-top:1em;
+
+        @include media($large-screen) {
+          font-size: 1.8em;
+          max-width: 80%;
+        }
+      }
+
+      p {
+        font-weight: 200;
+        line-height: 1.4em;
+        margin: 0 auto 3em auto; 
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          max-width: 80%;
+        }
+      }
+    }
+
+    button {
+      @include button(flat, $base-accent-color);
+      padding: 0.7em 1em;
+    }
+  }
+}
+
 
 
 // Page styles
@@ -19,6 +94,7 @@ article.type-system-geometric {
   $base-font-color: $dark-gray !default;
 
   width: 90%;
+  margin: 20px;
 
   h1, h2, h3, p {
     margin: 0;
@@ -159,7 +235,7 @@ article.type-system-geometric {
 
   $navigation-padding: 1em;
   $navigation-logo-height: 2em;
-  $navigation-background: #fff;
+  $navigation-background: whitesmoke;
   $navigation-color: transparentize($base-font-color, 0.3);
   $navigation-color-hover: $base-font-color;
   $navigation-height: 60px;
@@ -534,6 +610,12 @@ article.type-system-geometric {
   $flex-box-width: 18em;
   $flex-box-color: transparentize($base-font-color, 0.3);
   $flex-box-top-colors:
+    tomato,
+    #72BFBF,
+    #92B1E3,
+    #E3D743,
+    #CCC,
+    #F6C05C,
     tomato,
     #72BFBF,
     #92B1E3,

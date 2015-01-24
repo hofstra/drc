@@ -2,7 +2,7 @@
 layout: post
 title:  "Itinerary"
 date:   2015-01-24 14:00:00
-categories: project
+categories: projects
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

@@ -5,4 +5,13 @@ permalink: /projects/
 tags: [work]
 ---
 
-This is the projects page. Each project will also have its own page.
+<section>
+<div class="flex-boxes">
+  {% for post in site.posts %}
+    <a href="{{ post.url }}" class="flex-box{% cycle ' flex-box-big', '', '' %}">
+      <h1 class="flex-title">{{ post.title }}</h1>
+      <p>{{ post.excerpt }}</p>
+    </a>
+  {% endfor %}
+</div>
+</section>
