@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"at",
+				"auto"
+			],
+			[
+				"paddg",
+				"padding-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"white",
+				"whitesmoke"
+			],
+			[
 				"post",
 				"posts"
 			],
@@ -14,10 +30,6 @@
 			[
 				"background",
 				"background-color"
-			],
-			[
-				"back",
-				"background-image"
 			],
 			[
 				"border-st",
@@ -135,38 +147,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "css/main.scss",
-			"settings":
-			{
-				"buffer_size": 222,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_layouts/default.html",
-			"settings":
-			{
-				"buffer_size": 250,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 332,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/jamie/Library/Application Support/Sublime Text 3/Packages/User/Jekyll.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 3498,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -175,16 +155,8 @@
 		"selected_items":
 		[
 			[
-				"Jeky",
-				"Jekyll: New post"
-			],
-			[
-				"Jek",
-				"Jekyll: New post"
-			],
-			[
-				"jek	",
-				"Jekyll: New draft"
+				"Color",
+				"Color Convert: convert"
 			],
 			[
 				"Install",
@@ -195,20 +167,76 @@
 				"Package Control: Install Package"
 			],
 			[
-				"Inst",
+				"Insta",
 				"Package Control: Install Package"
 			],
 			[
-				"Remove",
-				"Package Control: Remove Package"
+				"hip	",
+				"Hipster Ipsum: Occupy"
+			],
+			[
+				"Hip",
+				"Hipster Ipsum: Occupy"
+			],
+			[
+				"Hipster",
+				"Hipster Ipsum: Occupy"
 			],
 			[
 				"Instal",
 				"Package Control: Install Package"
 			],
 			[
-				"Insta",
+				"High",
+				"Snippet: highlight"
+			],
+			[
+				"inst",
 				"Package Control: Install Package"
+			],
+			[
+				"Convert",
+				"ConvertToUTF8: Reload with Encoding"
+			],
+			[
+				"Jekyll",
+				"Jekyll: New post"
+			],
+			[
+				"Jek",
+				"Jekyll: New post"
+			],
+			[
+				"J",
+				"Jekyll: New post"
+			],
+			[
+				"jeky",
+				"Jekyll: New post"
+			],
+			[
+				"Jeky",
+				"Jekyll: New post"
+			],
+			[
+				"Jekt",
+				"Jekyll: New post"
+			],
+			[
+				"Jek	",
+				"Jekyll: New post"
+			],
+			[
+				"jek	",
+				"Jekyll: New draft"
+			],
+			[
+				"Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Remove",
+				"Package Control: Remove Package"
 			],
 			[
 				"Prett",
@@ -268,10 +296,6 @@
 			],
 			[
 				"Packe",
-				"Package Control: Install Package"
-			],
-			[
-				"inst",
 				"Package Control: Install Package"
 			],
 			[
@@ -346,32 +370,55 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/jamie/repos/drc/_posts"
+		"/Users/jamie/repos/drc",
+		"/Users/jamie/repos/drc/_site"
 	],
 	"file_history":
 	[
-		"/Users/jamie/Library/Application Support/Sublime Text 3/Packages/Jekyll/Jekyll.sublime-settings",
+		"/Users/jamie/repos/drc/index.html",
+		"/Users/jamie/repos/drc/_includes/header.html",
+		"/Users/jamie/repos/drc/_sass/_layout.scss",
+		"/Users/jamie/repos/drc/_config.yml",
+		"/Users/jamie/repos/drc/_layouts/page.html",
+		"/Users/jamie/repos/drc/projects.html",
+		"/Users/jamie/repos/drc/_site/drc-website.sublime-project",
 		"/Users/jamie/repos/drc/_posts/2015-01-24-rslt.md",
-		"/Users/jamie/repos/drc/_posts/_posts/2015-01-24-rslt.md",
+		"/Users/jamie/repos/drc/_posts/2015-01-24-mel.md",
+		"/Users/jamie/repos/drc/_layouts/post.html",
+		"/Users/jamie/repos/drc/_posts/2015-01-24-itinerary.markdown",
+		"/Users/jamie/repos/drc/_posts/2015-01-24-hearing-reading-and-seeing-early-20thcentury-egypt.md",
+		"/Users/jamie/repos/drc/_posts/2015-01-24-george-sand.md",
+		"/Users/jamie/repos/drc/_posts/2015-01-24-digitalvanmander.md",
+		"/Users/jamie/repos/drc/_posts/2015-01-24-amp-journal-of-digital-literature.md",
+		"/Users/jamie/repos/drc/_posts/2015-01-24-accessscholar.md",
+		"/Users/jamie/repos/drc/_posts/2014-11-12-welcome-to-hofstra-drc.markdown",
+		"/Users/jamie/repos/drc/_sass/neat/settings/_visual-grid.scss",
+		"/Users/jamie/repos/drc/_includes/footer.html",
+		"/Users/jamie/repos/drc/javascripts/main.js",
+		"/Users/jamie/repos/drc/_site/projects/index.html",
+		"/Users/jamie/repos/drc/_site/project/2015/01/24/itinerary.html",
+		"/Users/jamie/repos/drc/_site/jekyll/update/2014/11/12/welcome-to-hofstra-drc.html",
+		"/Users/jamie/repos/drc/_site/javascripts/main.js",
+		"/Users/jamie/repos/drc/_site/index.html",
+		"/Users/jamie/repos/drc/_site/css/main.css",
+		"/Users/jamie/repos/drc/_site/about/index.html",
+		"/Users/jamie/repos/drc/_site/2015/01/24/rslt.html",
+		"/Users/jamie/repos/drc/_site/2015/01/24/accessscholar.html",
+		"/Users/jamie/repos/drc/about.md",
+		"/Users/jamie/repos/drc/.sass-cache/0cd37cab9722ad0811cbea7c09a7ed769288df53/_layout.scssc",
+		"/Users/jamie/repos/drc/css/main.scss",
+		"/Users/jamie/repos/drc/_layouts/default.html",
+		"/Users/jamie/repos/drc/_includes/head.html",
+		"/Users/jamie/repos/drc/drc-website.sublime-project",
 		"/Users/jamie/Library/Application Support/Sublime Text 3/Packages/User/Jekyll.sublime-settings",
+		"/Users/jamie/Library/Application Support/Sublime Text 3/Packages/Jekyll/Jekyll.sublime-settings",
+		"/Users/jamie/repos/drc/_posts/_posts/2015-01-24-rslt.md",
 		"/Users/jamie/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/jamie/repos/drc/_posts/2015-01-24-asdf.md",
-		"/Users/jamie/repos/drc/_sass/_layout.scss",
-		"/Users/jamie/repos/drc/_posts/2014-11-12-welcome-to-hofstra-drc.markdown",
-		"/Users/jamie/repos/drc/_posts/2015-01-24-itinerary.markdown",
-		"/Users/jamie/repos/drc/javascripts/main.js",
-		"/Users/jamie/repos/drc/_includes/header.html",
-		"/Users/jamie/repos/drc/_layouts/default.html",
-		"/Users/jamie/repos/drc/_layouts/page.html",
-		"/Users/jamie/repos/drc/_layouts/post.html",
-		"/Users/jamie/repos/drc/_includes/footer.html",
 		"/Users/jamie/repos/drc/_sass/_syntax-highlighting.scss",
 		"/Users/jamie/repos/drc/_sass/_base.scss",
-		"/Users/jamie/repos/drc/_includes/head.html",
 		"/Users/jamie/repos/drc/.git/rebase-merge/git-rebase-todo",
-		"/Users/jamie/repos/drc/_sass/neat/settings/_visual-grid.scss",
 		"/Users/jamie/repos/drc/Gemfile",
-		"/Users/jamie/repos/drc/css/main.scss",
 		"/Volumes/photo/photo-includes.txt",
 		"/Volumes/photo/video-includes.txt",
 		"/Users/jamie/repos/*.txt",
@@ -384,8 +431,6 @@
 		"/Users/jamie/repos/bakeraction.org/_posts/2014-11-27-welcome-to-jekyll.markdown",
 		"/Users/jamie/repos/bakeraction.org/Gemfile",
 		"/Users/jamie/repos/bakeraction.org/.gitignore",
-		"/Users/jamie/repos/drc/_config.yml",
-		"/Users/jamie/repos/drc/about.md",
 		"/Users/jamie/repos/cfrp/Gemfile",
 		"/Users/jamie/repos/cfrp/lib/tasks/img_import_1680-1769.rake",
 		"/Users/jamie/repos/cfrp/Gemfile.lock",
@@ -457,37 +502,18 @@
 		"/Users/jamie/repos/rowhard/_posts/2014-09-09-screenings.md",
 		"/Users/jamie/repos/rowhard/feed.xml",
 		"/Users/jamie/repos/rowhard/Gemfile",
-		"/Users/jamie/repos/rowhard/nested-tabs.patch",
-		"/Users/jamie/repos/rowhard/_archive/_old-site/RHData.xml",
-		"/Users/jamie/repos/rowhard/_posts/2014-09-08-trailer.markdown",
-		"/Users/jamie/repos/rowhard/_posts/2014-05-17-welcome-to-jekyll.markdown",
-		"/Volumes/data/old-jamie/Downloads/theme5403d24eebad6423bd000001/_breadcrumbs.html",
-		"/Volumes/data/old-jamie/Downloads/theme5403d24eebad6423bd000001/profiles_show.html",
-		"/Volumes/data/old-jamie/Downloads/theme5403d24eebad6423bd000001/layout.html",
-		"/Volumes/data/old-jamie/Downloads/theme5403d24eebad6423bd000001/profiles_show_wide.html",
-		"/Users/jamie/Desktop/cherniack-form.html",
-		"/Users/jamie/repos/ans/app/assets/javascripts/application.js",
-		"/Users/jamie/repos/ans/app/views/users/show.html.erb",
-		"/Users/jamie/repos/ans/app/views/layouts/application.html.erb",
-		"/Users/jamie/repos/ans/app/views/devise/registrations/edit.html.erb",
-		"/Users/jamie/repos/ans/.git/PULLREQ_EDITMSG",
-		"/Users/jamie/Desktop/md-chapters.html",
-		"/Users/jamie/Desktop/md.html",
-		"/Users/jamie/repos/ans/app/views/documents/index.html.erb",
-		"/Users/jamie/repos/ans/app/views/devise/sessions/new.html.erb",
-		"/Users/jamie/repos/ans/app/assets/stylesheets/application.css",
-		"/Users/jamie/repos/ans/app/assets/stylesheets/boot-docs.css.scss",
-		"/Users/jamie/repos/ans/.git/rebase-merge/git-rebase-todo"
+		"/Users/jamie/repos/rowhard/nested-tabs.patch"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
 		"height": 177.0,
 		"where_history":
 		[
+			"/Users/jamie/repos/drc",
 			"~/repos/drc",
 			"~/repos/rowhard/_posts/",
 			"~/repos/rowhard/_posts",
@@ -539,6 +565,40 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"font-family",
+			"font",
+			".navigatio",
+			"body",
+			".navigatio",
+			" \n",
+			"     \n",
+			" \n",
+			"  \n",
+			"  ",
+			"’",
+			"“",
+			"”",
+			"“",
+			"’",
+			"excerpt_separator",
+			"  ",
+			"’",
+			"  ",
+			"      ",
+			"centered-navigation",
+			"$centered-navigation-item-nudge",
+			".centered-",
+			"text-align: center;",
+			"center",
+			".centered-",
+			"center",
+			"$centered-",
+			"center",
+			"$centered-",
+			"center",
+			"“",
+			"\"",
+			"(",
 			"\n\n",
 			"github_username",
 			"(",
@@ -632,41 +692,7 @@
 			"linear-gradients",
 			"}.icon-",
 			"\n.icon-",
-			"}.icon-",
-			"  ",
-			"autohide",
-			"hover",
-			"nav-pills",
-			"hover",
-			"nav-pills",
-			"nav-pills:hover",
-			"<ul class=\"nav nav-links\">",
-			"nav nav-",
-			"nav-tabs-xs",
-			"Recent",
-			"annotationmenu",
-			"Recet",
-			"h4",
-			"annotationmenu",
-			"logo",
-			".logo",
-			"annotation_list",
-			"jqueryui",
-			"#fff",
-			"<div class=\"row\">\n  <div class=\"col-md-12\">\n      <div class=\"page-header\">\n",
-			"<div class=\"row\">\n  <div class=\"col-md-12\">\n",
-			"navmenu",
-			"nav-tabs",
-			"nav",
-			"annotation-item",
-			"strftime",
-			"nav-tabs",
-			"strftime",
-			"<span class=\"badge\"><%= document.created_at.strftime(\"%m/%d/%Y\") %></span>",
-			"annotation-item",
-			"label label-default",
-			"label",
-			"btn btn-danger"
+			"}.icon-"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -674,6 +700,19 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\n",
+			"\n\n",
+			"\n",
+			" ",
+			"'",
+			"\"",
+			"'",
+			" ",
+			"navigation",
+			".",
+			"$",
+			"\"",
+			" ",
 			", ",
 			" ",
 			"/images/rowhard_12.jpg",
@@ -788,155 +827,25 @@
 			"'",
 			"        f.input :",
 			"",
-			"\n",
-			"- ",
-			"btn-small ",
-			"btn-xs ",
-			"btn-sm ",
-			"btn btn-sm ",
-			"span4",
-			"ticket_sale",
-			"seating_category",
-			":irregular_receipts",
-			"	# '",
-			"	#  '",
-			"	#",
-			"none"
+			"\n"
 		],
 		"reverse": false,
 		"show_context": false,
 		"use_buffer2": true,
 		"whole_word": false,
-		"wrap": false
+		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "css/main.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 222,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								219,
-								219
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_layouts/default.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 250,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								230,
-								230
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 332,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								165,
-								165
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/Users/jamie/Library/Application Support/Sublime Text 3/Packages/User/Jekyll.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3498,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								364,
-								364
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -976,7 +885,7 @@
 	"project": "drc-website.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 96.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1023,7 +932,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 200.0,
+	"side_bar_width": 387.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

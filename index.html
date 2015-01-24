@@ -12,14 +12,25 @@ layout: default
 	</div>
 </div>
 
+<div class="cards">
+  {% for post in site.posts limit:3 %}
+  <div class="card">
+    <div class="card-image">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+    </div>
+    <div class="card-header">
+      {{ post.title }}
+    </div>
+    <div class="card-copy">
+      <p>{{ post.excerpt }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
 <!-- <section>
 <div class="flex-boxes">
-  {% for post in site.posts %}
-    <a href="{{ post.url }}" class="flex-box{% cycle ' flex-box-big', '', '' %}">
-      <h1 class="flex-title">{{ post.title }}</h1>
-      <p>{{ post.excerpt }}</p>
-    </a>
-  {% endfor %}
 </div>
 </section>
  -->
