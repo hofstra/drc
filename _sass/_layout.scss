@@ -188,8 +188,8 @@ article.type-system-geometric {
   $medium-screen: em(640) !default;
   $base-font-color: $dark-gray !default;
 
-  width: 90%;
-  margin: 20px;
+  // width: 90%;
+  // margin: 20px;
 
   h1, h2, h3, p {
     margin: 0;
@@ -214,8 +214,8 @@ article.type-system-geometric {
   }
   //////////////////////////////////////////////////////////////////////////////////
 
-  $sans-serif: 'Questrial', sans-serif;
-  $serif: 'Sanchez', serif;
+  // $sans-serif: 'Questrial', sans-serif;
+  // $serif: 'Sanchez', serif;
 
   @include clearfix;
   text-align: left;
@@ -233,7 +233,7 @@ article.type-system-geometric {
   }
 
   h1 {
-    font-family: $serif;
+    // font-family: $serif;
     font-size: 1.8em;
     font-weight: 700;
     margin-bottom: 0.5em;
@@ -337,7 +337,7 @@ article.type-system-geometric {
   $navigation-item-padding: 1em;
   $navigation-submenu-padding: 1em;
   $navigation-submenu-width: 12em;
-  $navigation-item-nudge: 1.2em;
+  $navigation-item-nudge: 0;
   $horizontal-bar-mode: $large-screen;
 
   background-color: $navigation-background;
@@ -711,7 +711,6 @@ article.type-system-geometric {
     #E3D743,
     #CCC,
     #F6C05C,
-    tomato,
     #72BFBF,
     #92B1E3,
     #E3D743,
@@ -737,7 +736,7 @@ article.type-system-geometric {
     margin: $flex-box-gutter;
     padding: 2em 2em 3em 2em;
 
-    @for $i from 1 to 7 { // assign colors from $flex-box-top-colors list
+    @for $i from 1 to 12 { // assign colors from $flex-box-top-colors list
       &:nth-child(#{$i}) {
         $color-from-list: nth($flex-box-top-colors, $i);
         border-top: 6px solid $color-from-list;

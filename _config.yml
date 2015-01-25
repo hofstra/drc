@@ -12,4 +12,4 @@ github_username:  hofstra
 markdown: kramdown
 excerpt_separator: <!--more-->  # you can specify your own separator, of course.
 permalink: none
-exclude: drc-website.sublime-project
+exclude: ['drc-website.sublime-project']

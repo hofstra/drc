@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Hofstra Digital Research Center"
-date:   2014-11-12 21:46:19
+date:   2015-02-13 21:46:19
 categories: projects
 ---
 
