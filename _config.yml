@@ -10,6 +10,6 @@ github_username:  hofstra
 
 # Build settings
 markdown: kramdown
-excerpt_separator: <!--more-->  # you can specify your own separator, of course.
+excerpt_separator: <!--more-->
 permalink: none
 exclude: ['drc-website.sublime-project']
