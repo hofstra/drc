@@ -14,7 +14,7 @@ layout: default
 
 <div class="cards">
   {% for post in site.posts limit:3 %}
-  <a class="card" href="{{ post.url }}">
+  <a class="card" href="{{ post.url | prepend: site.baseurl }}">
     <div class="card-image">
       <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
     </div>
