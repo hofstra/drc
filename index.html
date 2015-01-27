@@ -3,20 +3,34 @@ layout: default
 ---
 
 <div class="hero">
-	<div class="hero-inner">
-    	<div class="hero-copy">
-			<h1>Hearing, Reading, and Seeing Early 20th-Century Egypt</h1>
-			<p>Hearing, Reading, and Seeing Early 20th-Century Egypt explores popular representations of Egypt created by local Egyptians, Western Europeans, and North Americans. Specifically, it is an archival repository of photographic images, sound recordings, silent films, and film magazines that focus on visual and aural conceptions of Egypt.</p>	
-		    <button>Learn More</button>
-		</div>
-	</div>
+  <div class="hero-inner">
+      <div class="hero-copy">
+        {% for post in site.posts limit:1 %}
+            {% if post.image %}
+            <style type="text/css">
+            div.hero {
+              background-image: url("{{post.image}}");
+            }
+            </style>
+            {% endif %}
+            <h1>{{ post.title }} </h1>
+            {{ post.excerpt }}
+              <button>Learn More</button>
+        {% endfor %}
+    </div>
+  </div>
 </div>
 
+
 <div class="cards">
-  {% for post in site.posts limit:3 %}
+  {% for post in site.posts limit:3 offset:1 %}
   <a class="card" href="{{ post.url | prepend: site.baseurl }}">
     <div class="card-image">
+      {% if post.image %}
+      <img src="{{ post.image}}" alt="">
+      {% else %}
       <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+      {% endif %}
     </div>
     <div class="card-header">
       {{ post.title }}
@@ -27,10 +41,3 @@ layout: default
   </a>
   {% endfor %}
 </div>
-
-
-<!-- <section>
-<div class="flex-boxes">
-</div>
-</section>
- -->

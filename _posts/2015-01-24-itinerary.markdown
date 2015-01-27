@@ -3,6 +3,8 @@ layout: post
 title:  "Itinerary"
 date:   2015-02-05 14:00:00
 categories: projects
+image: '/images/wenceslas_hollar.jpg'
+published: true
 ---
 
 "'A Frightful Number': Mapping Daniel Defoe's A Journal of the Plague Year" offers students of literature and fellow scholars a different way of reading and experiencing Defoe's novel, one that places his narration of the Great Plague of London (1664-1665) within the broader history of cartography during the late seventeenth and early eighteenth centuries. 
