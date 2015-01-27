@@ -9,7 +9,7 @@ layout: default
             {% if post.image %}
             <style type="text/css">
             div.hero {
-              background-image: url("{{ post.image | prepend site.url }}");
+              background-image: url("{{ post.image | prepend: site.url }}");
             }
             </style>
             {% endif %}
