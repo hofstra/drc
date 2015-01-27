@@ -5,6 +5,7 @@ categories: projects
 tags: []
 author: "David A. Powell"
 published: True
+image: "/images/sand.png"
 
 ---
 
