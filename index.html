@@ -14,7 +14,7 @@ layout: default
 
 <div class="cards">
   {% for post in site.posts limit:3 %}
-  <div class="card">
+  <a class="card" href="{{ post.url }}">
     <div class="card-image">
       <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
     </div>
@@ -24,7 +24,7 @@ layout: default
     <div class="card-copy">
       <p>{{ post.excerpt }}</p>
     </div>
-  </div>
+  </a>
   {% endfor %}
 </div>
 

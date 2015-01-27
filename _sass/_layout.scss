@@ -84,6 +84,10 @@ section {
   @include flex-wrap(wrap);
   @include justify-content(space-between);
   margin-top: 20px; 
+
+  a.card {
+    color:#000;
+  }
 }
 
 .card {
@@ -118,6 +122,7 @@ section {
   margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
   position: relative;
+
 
   .card-image {
     overflow: hidden;
