@@ -27,7 +27,7 @@ layout: default
   <a class="card" href="{{ post.url | prepend: site.baseurl }}">
     <div class="card-image">
       {% if post.image %}
-      <img src="{{ post.image}}" alt="">
+      <img src="{{ post.image | prepend: site.url }}" alt="">
       {% else %}
       <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
       {% endif %}
