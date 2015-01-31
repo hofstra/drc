@@ -195,11 +195,9 @@ article.type-system-geometric {
   $medium-screen: em(640) !default;
   $base-font-color: $dark-gray !default;
 
-  // width: 90%;
-  // margin: 20px;
 
   h1, h2, h3, p {
-    margin: 0;
+    margin: 20px 0 0 0;
   }
 
   hr {
@@ -213,6 +211,7 @@ article.type-system-geometric {
   p {
     color: $base-font-color;
     line-height: $base-line-height;
+    width: 66%;
   }
 
   a {
@@ -322,6 +321,10 @@ article.type-system-geometric {
 
   p.author {
     font-family: $sans-serif;
+  }
+
+  ul {
+    @extend %default-ul;
   }
 }
 
