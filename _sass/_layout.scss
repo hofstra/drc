@@ -197,7 +197,7 @@ article.type-system-geometric {
 
 
   h1, h2, h3, p {
-    margin: 20px 0 0 0;
+    margin: 0;
   }
 
   hr {
@@ -211,7 +211,7 @@ article.type-system-geometric {
   p {
     color: $base-font-color;
     line-height: $base-line-height;
-    width: 66%;
+    // width: 66%;
   }
 
   a {
