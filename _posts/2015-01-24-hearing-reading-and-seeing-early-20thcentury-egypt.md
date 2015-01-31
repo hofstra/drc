@@ -5,6 +5,7 @@ categories: projects
 tags: []
 author: Mario Ruiz
 published: True
+date:   2015-01-31 21:46:19
 image: '/images/011-theda-bara-theredlist.jpg'
 ---
 

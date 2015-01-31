@@ -4,7 +4,7 @@ title: "AMP: Journal of Digital Literature"
 categories: projects
 tags: []
 author: Janet Kaplan
-date:   2015-02-01 21:46:19
+date:   2015-01-21 21:46:19
 published: True
 image: "/images/amp.png"
 

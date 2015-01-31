@@ -6,6 +6,7 @@ tags: []
 author: "David A. Powell"
 published: True
 image: "/images/sand.png"
+date:   2015-02-02 21:46:19
 
 ---
 
