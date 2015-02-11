@@ -15,7 +15,7 @@ layout: default
             {% endif %}
             <h1>{{ post.title }} </h1>
             {{ post.excerpt }}
-            <button>Learn More</button>
+            <a href="{{ post.url | prepend: site.baseurl }}"><button>Learn More</button></a>
         {% endfor %}
     </div>
   </div>

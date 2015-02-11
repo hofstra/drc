@@ -9,14 +9,19 @@ tags: [general, information]
 {% for person in site.data.people %}
   <tr>
   	<td>
+		<img src="http://placehold.it/100x100">     
+    </td>
+  	<td>
      {{ person.first_name }}
     </td>
   	<td>
      {{ person.last_name }}
     </td>
+<!-- 
   	<td>
      {{ person.email }}
     </td>
+-->
   </tr>
 {% endfor %}
 </table>
