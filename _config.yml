@@ -1,8 +1,9 @@
 # Site settings
-title: Hofstra DRC
+title: The Digital Research Center at Hofstra
 email: jamiefolsom@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  The DRC collaborates with faculty at Hofstra in the design and implementation of digital solutions to challenges in humanistic inquiry.
+# description: > # this means to ignore newlines until "baseurl:"
+#   The DRC collaborates with faculty at Hofstra in the design and implementation of digital solutions to challenges in humanistic inquiry.
+description: The DRC collaborates with faculty at Hofstra in the design and implementation of digital solutions to challenges in humanistic inquiry.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://hofstradrc.org/"
 twitter_username: hofstradrc

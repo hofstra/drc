@@ -1,14 +1,20 @@
-<header class="navigation" role="banner">
-  <div class="navigation-wrapper">
-    <nav role="navigation">
-      <ul id="js-navigation-menu" class="navigation-menu show">
-          <li class="nav-link"><a class="page-link" href="/">Home</a></li>
-        {% for page in site.pages %}
-          {% if page.title %}
-          <li class="nav-link"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </nav>
-  </div>
-</header>
+    <div class="logo-header-wrapper"><div class="logo-header">
+        <img src="/images/drc.logo.horizontal.png" alt="Digital Research Center at Hofstra" height="42" width="247">
+    </div></div>
+
+    <section id="header">
+        <header class="navigation" role="banner">
+            <div class="navigation-wrapper">
+                <nav role="navigation">
+                    <ul id="js-navigation-menu" class="navigation-menu show">
+                            <li class="nav-link"><a class="page-link" href="/">Home</a></li>
+                        {% for page in site.pages %}
+                            {% if page.title %}
+                            <li class="nav-link"><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
