@@ -8,3 +8,8 @@
 * [ ] Optimize the design of the People page, link to bios
 * [ ] Implement a mobile-friendly, collapsible version of the top nav
 * [ ] can we relate people to projects? So if you specify a person post, or data or collection entry by id in the frontmatter of a project post, could we load that person's headshot, name, department, as a sidebar on the project page? I seem to recall that being pretty straightforward in jekyll, but I can't be sure. If you think that's an easy thing to add within scope, great.
+
+### To Do
+
+* [ ] What's the breakpoint where single column switches to two columns?
+  * [ ] At that breakpoint, homepage cards need `min-height` for two-line headers
