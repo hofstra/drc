@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
+  <div class="logo-header-wrapper"><div class="logo-header">
+    <img src="/images/drc.logo.horizontal.png" alt="Digital Research Center at Hofstra" height="42" width="247">
+  </div></div>
 
-  	<section id="header">
-    {% include header.html %}
-	</section>
-    
-    <section id="content">
-        {{ content }}
-    </section>
+  <section id="header">
+  {% include header.html %}
+  </section>
 
-    <section id="footer">
-    {% include footer.html %}
-	</section>
-	
-  </body>
+  <section id="content">
+  {{ content }}
+  </section>
+
+  <section id="footer">
+  {% include footer.html %}
+  </section>
+
+</body>
 
 </html>

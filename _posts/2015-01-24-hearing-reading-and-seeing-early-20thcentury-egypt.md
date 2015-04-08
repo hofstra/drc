@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hearing, Reading, and Seeing Early 20th-Century Egypt"
+title: "Hearing, Reading, and Seeing Early 20th-Century&nbsp;Egypt"
 categories: projects
 tags: []
 author: Mario Ruiz
@@ -9,7 +9,7 @@ date: 2015-03-19 00:00:00
 image: "/images/011-theda-bara-theredlist.jpg"
 ---
 
-Hearing, Reading, and Seeing Early 20th-Century Egypt explores popular representations of Egypt created by local Egyptians, Western Europeans, and North Americans. Specifically, it is an archival repository of photographic images, sound recordings, silent films, and film magazines that focus on visual and aural conceptions of Egypt. 
+Hearing, Reading, and Seeing Early 20th-Century Egypt explores popular representations of Egypt created by local Egyptians, Western Europeans, and North Americans. Specifically, it is an archival repository of photographic images, sound recordings, silent films, and film magazines that focus on visual and aural conceptions of Egypt.
 
 <!--more-->
 

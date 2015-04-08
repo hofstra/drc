@@ -8,9 +8,9 @@ layout: default
         {% for post in site.posts limit:1 %}
             {% if post.image %}
             <style type="text/css">
-            div.hero {
-              background-image: url("{{ post.image }}");
-            }
+              div.hero {
+                background-image: url("{{ post.image }}");
+              }
             </style>
             {% endif %}
             <h1>{{ post.title }} </h1>
