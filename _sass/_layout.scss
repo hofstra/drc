@@ -660,13 +660,13 @@ article.type-system-geometric {
     $medium-screen: em(640) !default;
     $large-screen: em(860) !default;
 
-    font-family: 'Montserrat', sans-serif;
 
     ul {
         padding: 0;
     }
 
     li {
+        font-family: 'Montserrat', sans-serif;
         list-style: none;
         line-height: 1.5em;
     }
