@@ -2,20 +2,20 @@
 layout: post
 title: "Access Scholar"
 categories: projects
-date:   2015-01-25 21:46:19
+date: 2015-01-25 21:46:19
 tags: []
 published: true
 image: "/images/access_scholar.png"
 
 ---
 
-Digital scholarship presents a tremendous but far-too-often unrealized opportunity for physically challenged scholars and students.  
+Digital scholarship presents a tremendous but far-too-often unrealized opportunity for physically challenged scholars and students.
 
 Primary and secondary materials that are digitized can prove much more accessible than hard copies to print-disabled audiences; however, how these materials are digitized and published makes all the difference.   Texts scanned as images, for example, are not accessible to screen-reading software, a crucial tool for blind and low- vision scholars undertaking sustained and high volume reading.
 
 <!--more-->
 
-AccessScholar will address the problem of this unrealized opportunity in several ways.  
+AccessScholar will address the problem of this unrealized opportunity in several ways.
 
 * It will publish and disseminate accessibility standards such as those advocated by the W3C Web Accessibility Initiative and NFB (National Foundation for the Blind) Nonvisual Web Accessibility Certification Project.
 

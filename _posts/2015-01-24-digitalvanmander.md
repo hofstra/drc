@@ -6,7 +6,7 @@ tags: []
 author: Martha Hollander
 published: True
 image: "/images/van-mander.jpg"
-date:   2015-01-02 21:46:19
+date: 2015-01-02 21:46:19
 ---
 
 The Digital Van Mander will offer the first authoritative English translation of Karel van

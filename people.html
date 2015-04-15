@@ -5,23 +5,50 @@ permalink: /people/
 tags: [general, information]
 ---
 
+{% for person in site.data.people | sort: 'last_name' %}
+
+<div class="photo">
+    <img src="http://placehold.it/100x100" />
+</div>
+<div class="person">
+    <h3>{{ person.first_name }} {{ person.last_name }}</h3>
+
+{% assign projects = site.posts | where: "person", person.id %}
+
+{% for post in projects %}
+{% if loop.first %}
+    <h4>Projects</h4>
+    <ul>
+{% endif %}
+        <li>{{post.title}}</li>
+{% if loop.last %}
+    </ul>
+{% endif %}
+{% endfor %}
+</div>
+
+
+
+{% endfor %}
+
 <table>
-{% for person in site.data.people %}
-  <tr>
-  	<td>
-		<img src="http://placehold.it/100x100">     
-    </td>
-  	<td>
-     {{ person.first_name }}
-    </td>
-  	<td>
-     {{ person.last_name }}
-    </td>
-<!-- 
-  	<td>
-     {{ person.email }}
-    </td>
+{% for person in site.data.people | sort: 'last_name' %}
+
+<tr>
+<td>
+<img src="http://placehold.it/100x100">
+</td>
+<td>
+{{ person.first_name }}
+</td>
+<td>
+{{ person.last_name }}
+</td>
+<!--
+<td>
+{{ person.email }}
+</td>
 -->
-  </tr>
+</tr>
 {% endfor %}
 </table>
