@@ -3,7 +3,7 @@
 
 {% include head.html %}
 
-<body>
+<body{% if page.id!='' %} class="page-{{ page.id }}"{% endif %}>
   {% include header.html %}
 
   <section id="content">
