@@ -5,6 +5,7 @@ date: 2015-02-05 14:00:00
 categories: projects
 image: '/images/wenceslas_hollar.jpg'
 published: true
+feature: false
 people:
   - "3"
   - "1"

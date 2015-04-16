@@ -5,7 +5,8 @@ categories: projects
 tags: []
 author: Janet Kaplan
 date: 2015-01-21 21:46:19
-published: True
+published: true
+feature: false
 image: "/images/amp.png"
 
 ---

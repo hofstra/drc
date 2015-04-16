@@ -4,7 +4,8 @@ title: George Sand Association
 categories: projects
 tags: []
 author: "David A. Powell"
-published: True
+published: true
+feature: false
 image: "/images/sand.png"
 date:   2015-02-02 21:46:19
 

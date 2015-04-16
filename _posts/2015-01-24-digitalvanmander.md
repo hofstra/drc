@@ -4,7 +4,8 @@ title: The Digital Van Mander
 categories: projects
 tags: []
 author: Martha Hollander
-published: True
+published: true
+feature: false
 image: "/images/van-mander.jpg"
 date: 2015-01-02 21:46:19
 ---
