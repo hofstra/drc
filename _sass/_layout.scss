@@ -872,3 +872,33 @@ article.type-system-geometric {
         @include flex(1 1 40em);
     }
 }
+
+.people {
+    text-align: center;
+}
+.person {
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    text-align: center;
+    width: 200px;
+
+    .details {
+        h3 {
+            font-size: 1.2em;
+        }
+        ul {
+            list-style: none;
+            text-align: center;
+        }
+        li {
+            display: inline;
+            margin-right: 2px;
+            margin-left: 2px;
+        }
+    }
+}
