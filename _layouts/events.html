@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article class="type-system-geometric">
+<h1>{{ page.title }}</h1>
+  {{ content }}
+{% if page.author!='' %}<hr>
+<p class="author">Author: {{ page.author }}</p>{% endif %}
+</article>
+
+<section class="events">
+{% assign events = site.categories.events %}
+{% for post in events limit:10 %}
+<h3><a href="{{ post.link }}">{{ post.title }}</a></h3>
+<p>{{ post.display_date }}<br />
+{{ post.location }}</p>
+{{ post.content }}
+{% endfor %}
+</section>
