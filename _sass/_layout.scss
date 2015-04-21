@@ -718,7 +718,8 @@ article.type-system-geometric {
                 display: none;
             }
         }
-            .mobile-toggle:hover {
+            .mobile-toggle:hover,
+            .mobile-toggle:focus {
                 color: $support-color-1;
             }
     // /Added by MJR ////////////////////////////////////////
