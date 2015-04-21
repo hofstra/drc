@@ -675,14 +675,14 @@ section.events {
             }
 
             a {
-                background-color: darken($navigation-background, 3%);
+                //background-color: darken($navigation-background, 3%);
                 display: inline-block;
                 text-align: right;
                 text-decoration: none;
                 width: 100%;
 
                 @include media($horizontal-bar-mode) {
-                    background-color: $navigation-background;
+                    //background-color: $navigation-background;
                     padding-left: $navigation-submenu-padding;
                     text-align: left;
                     width: $navigation-submenu-width;
