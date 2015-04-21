@@ -7,6 +7,7 @@ author: Janet Kaplan
 date: 2015-01-21 21:46:19
 published: true
 feature: false
+people:
 image: "/images/amp.png"
 
 ---

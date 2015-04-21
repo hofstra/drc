@@ -271,6 +271,9 @@ article.type-system-geometric {
         color: $base-link-color;
         text-decoration: none;
     }
+    a:hover {
+        text-decoration: underline !important;
+    }
 
     //////////////////////////////////////////////////////////////////////////////////
 
@@ -303,7 +306,7 @@ article.type-system-geometric {
         margin-bottom: 0.5em;
 
         @include media($medium-screen) {
-            font-size: 2.4em;
+            font-size: 2em;
         }
     }
 
@@ -331,7 +334,7 @@ article.type-system-geometric {
     }
 
     h3 {
-        font-family: $serif;
+        //font-family: $serif;
         font-size: 1.4em;
         font-weight: 400;
         line-height: 1.3em;
@@ -521,6 +524,9 @@ article.type-system-geometric {
             &:hover {
                 color: $navigation-color-hover;
             }
+            &:hover {
+                text-decoration: underline;
+            }
         }
 
         @include media($horizontal-bar-mode) {
@@ -676,9 +682,16 @@ article.type-system-geometric {
         .logo-header {
             padding-right: 20px;
             padding-left: 20px;
+            img {
+                height: auto;
+                width: 200px;
+            }
             @include media($large-screen) {
                 padding-right: 10px;
                 padding-left: 10px;
+                img {
+                    width: 247px;
+                }
             }
             @include media(1106px) {
                 padding-right: 20px;
@@ -689,6 +702,25 @@ article.type-system-geometric {
                 padding-left: 40px;
             }
         }
+        .mobile-toggle {
+            border: 2px solid $support-color-1;
+            color: $support-color-1;
+            display: inline-block;
+            float: right;
+            font-family: Montserrat, sans-serif;
+            font-size: 12px;
+            height: 24px;
+            line-height: 21px;
+            padding: 0px 4px;
+            position: relative;
+            top: 8px;
+            @include media($large-screen) {
+                display: none;
+            }
+        }
+            .mobile-toggle:hover {
+                color: $support-color-1;
+            }
     // /Added by MJR ////////////////////////////////////////
 
 // Footer
@@ -712,6 +744,9 @@ article.type-system-geometric {
 
     a {
         text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline !important;
     }
     //////////////////////////////////////////////////////////////////////////////////
 
@@ -805,6 +840,9 @@ article.type-system-geometric {
 
     a {
         text-decoration: none;
+    }
+    a:hover .flex-box .flex-title {
+        text-decoration: underline;
     }
     //////////////////////////////////////////////////////////////////////////////////
 
@@ -924,10 +962,17 @@ article.type-system-geometric {
             text-align: center;
         }
         li {
-            display: inline;
+            display: inline-block;
+            line-height: 1.25em;
             margin-right: 2px;
             margin-left: 2px;
         }
+            li:after {
+                content: ",";
+            }
+            li:last-child:after {
+                content: "";
+            }
         a {
             color: $base-accent-color;
         }
