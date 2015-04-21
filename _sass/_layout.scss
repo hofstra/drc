@@ -20,6 +20,10 @@ body {
     background-color: $support-color-4;
 }
 
+a img {
+    border: none !important;
+}
+
 section {
     @include outer-container;
     // aside { @include span-columns(3); }
