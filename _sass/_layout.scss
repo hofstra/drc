@@ -301,6 +301,7 @@ article.type-system-geometric {
 
     h1 {
         // font-family: $serif;
+        color: $charcoal;
         font-size: 1.8em;
         font-weight: 700;
         margin-bottom: 0.5em;
@@ -842,9 +843,9 @@ article.type-system-geometric {
     a {
         text-decoration: none;
     }
-    a:hover .flex-box .flex-title {
+    /*a:hover .flex-box .flex-title {
         text-decoration: underline;
-    }
+    }*/
     //////////////////////////////////////////////////////////////////////////////////
 
     $flex-box-border-color: $light-gray;
@@ -878,9 +879,10 @@ article.type-system-geometric {
         @include transition (all 0.2s ease-in-out);
         @include flex(2 2 15em);
         @include align-self(stretch);
-        background: $flex-box-background;
-        border-radius: $base-border-radius;
-        box-shadow: inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10%);
+        //background: $flex-box-background;
+        background: white;
+        //border-radius: $base-border-radius;
+        //box-shadow: inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10%);
         display: block;
         margin: $flex-box-gutter;
         padding: 2em 2em 3em 2em;
@@ -917,7 +919,17 @@ article.type-system-geometric {
             line-height: 1.5em;
             margin: auto;
         }
+        &:hover {
+            text-decoration: none !important;
+            .flex-title {
+                text-decoration: none !important;
+            }
+            p {
+                text-decoration: none !important;
+            }
+        }
     }
+
 
     .flex-box-big {
         @include flex(1 1 40em);
@@ -977,5 +989,13 @@ article.type-system-geometric {
         a {
             color: $base-accent-color;
         }
+    }
+}
+
+#subForm {
+    padding-bottom: 20px;
+    h3 {
+        margin-bottom: 40px;
+        padding-top: 20px;
     }
 }
