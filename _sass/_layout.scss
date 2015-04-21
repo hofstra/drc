@@ -112,6 +112,17 @@ section {
     }
 }
 
+.home-cta {
+    @extend .hero;
+    background: none;
+    .hero-inner {
+        button {
+            @include button(flat, $base-accent-color);
+            padding: 0.7em 1em;
+        }
+    }
+}
+
 
 .cards {
     @include display(flex);
@@ -236,7 +247,7 @@ article.type-system-geometric {
     $base-line-height: 1.5em !default;
     $base-spacing: 1.5em !default;
     //$base-accent-color: #477DCA !default;
-    $base-link-color: $base-accent-color !default;
+    $base-link-color: $base-accent-color;
     $dark-gray: #333 !default;
     $light-gray: #DDD !default;
     $medium-screen: em(640) !default;
@@ -381,6 +392,7 @@ article.type-system-geometric {
     }
 
     p.author {
+        color: $support-color-1;
         font-family: $sans-serif;
         font-size: .75em;
     }
@@ -392,6 +404,9 @@ article.type-system-geometric {
     ol {
         @extend %default-ol;
     }
+}
+section.events {
+    @extend article.type-system-geometric;
 }
 
 
