@@ -14,6 +14,8 @@ $support-color-3: #ecebeb;
 $support-color-4: #f5f5f5;
 $highlight-color: #feb612; // Hofstra Gold
 
+$montserrat: 'Montserrat', sans-serif;
+
 $large-screen: em(860) !default;
 
 body {
@@ -24,7 +26,7 @@ a img {
     border: none !important;
 }
 
-section {
+#content {
     @include outer-container;
     // aside { @include span-columns(3); }
     // article { @include span-columns(9); }
@@ -51,7 +53,7 @@ section {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 3em;
+    //padding-bottom: 3em;
 
     // height: 250px;
 
@@ -66,29 +68,31 @@ section {
         color: $hero-color;
         margin: auto;
         //padding: 3.5em;
-        padding-top: 20px;
+        //padding-top: 20px;
         padding-right: 0px;
         padding-left: 0px;
-        text-align: center;
+        //text-align: center;
         @include media($large-screen) {
-            padding: 3.5em;
+            //padding: 3.5em;
         }
 
         .hero-copy {
             //background-color: rgba(180, 180, 144, 0.8);
             //background-color: transparentize($highlight-color, 0.5);
             background-color: transparentize($base-accent-color, 0.5);
-            text-align: center;
+            //text-align: center;
+            padding-top: 40px;
             padding-right: 10px;
             padding-bottom: 40px;
             padding-left: 10px;
 
             h1 {
+                font-family: $montserrat;
                 font-size: 1.6em;
                 margin: 1em auto 1em auto;
                 padding-top: 1em;
                 padding-right: 20px;
-                padding-left: 20px;
+                //padding-left: 20px;
 
                 @include media($large-screen) {
                     font-size: 1.8em;
@@ -99,7 +103,7 @@ section {
             p {
                 //font-weight: 200;
                 line-height: 1.5em;
-                margin: 0 auto 1em auto;
+                margin: 0 auto 2em auto;
 
                 @include media($large-screen) {
                     font-size: 1.1em;
@@ -117,22 +121,27 @@ section {
 }
 
 .home-cta {
-    @extend .hero;
+    //@extend .hero;
     background: none;
-    .hero-inner {
-        button {
-            @include button(flat, $base-accent-color);
-            padding: 0.7em 1em;
-        }
+    text-align: center;
+
+    padding-bottom: 80px;
+    @include media($large-screen) {
+        padding-top: 60px;
+    }
+    button {
+        @include button(flat, $base-accent-color);
+        padding: 0.7em 1em;
     }
 }
 
 
 .cards {
-    @include display(flex);
-    @include flex-wrap(wrap);
-    @include justify-content(space-between);
+    //@include display(flex);
+    //@include flex-wrap(wrap);
+    //@include justify-content(space-between);
     margin-top: 20px;
+    text-align: center;
 
     a.card {
         color:#000;
@@ -160,33 +169,40 @@ section {
     $card-image-hover-background: lighten($card-image-background, 5%);
     $card-margin: 0;
 
-    @include flex-basis(15em);
-    @include flex-grow(1);
-    @include transition (all 0.2s ease-in-out);
-    background-color: transparent;
+    //@include flex-basis(15em);
+    //@include flex-grow(1);
+    //@include transition (all 0.2s ease-in-out);
+    background-color: white;
     //border-radius: $base-border-radius;
     border-radius: 0;
     //border: $card-border;
     //box-shadow: 0 1px 0px darken($base-background-color, 10%);
     cursor: pointer;
-    margin: 0 $card-margin $base-spacing $card-margin;
-    padding: 10px;
-    position: relative;
-    position: relative;
+    display: inline-block;
+    //margin: 0 $card-margin $base-spacing $card-margin;
+    margin: 0 auto 20px;
+    max-width: 450px;
+    //padding: 10px;
+    //position: relative;
+    text-align: left;
+
 
     @include media($large-screen) {
-        background-color: white;
+        //background-color: white;
+        //float: left;
+        vertical-align: top;
+        max-width: 31%;
         &:first-child {
-            margin-right: 5px;
+            margin-right: 10px;
         }
         &:last-child {
-            margin-left: 5px;
+            margin-left: 10px;
         }
     }
 
     .card-image {
         overflow: hidden;
-        max-height: 150px;
+        max-height: 300px;
 
         img {
             @include transition (all 0.2s ease-in-out);
@@ -203,7 +219,8 @@ section {
         //border-bottom: $card-border;
         border-radius: $base-border-radius $base-border-radius 0 0;
         color: $base-accent-color;
-        font-weight: bold;
+        font-family: $montserrat;
+        //font-weight: bold;
         line-height: 1.5em;
         padding: ($base-spacing / 3) ($base-spacing / 2);
     }
@@ -244,6 +261,35 @@ section {
 }
 
 
+.page-header-image {
+    margin-bottom: 10px;
+    max-height: 150px;
+    overflow: hidden;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+    @include media($large-screen) {
+        margin-bottom: 20px;
+    }
+}
+.post-image {
+    background-size: 100% auto;
+    background-position: center top;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+    @include media($large-screen) {
+        background-position: center -100px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+}
+
 // Page styles
 article.type-system-geometric {
     ///////////////////////////////////////////////////////////////////////////////////
@@ -262,7 +308,9 @@ article.type-system-geometric {
     @include media($large-screen) {
         padding: 10px 10px 40px;
     }
-
+    @include media(1088px) {
+        padding: 10px 0px 40px;
+    }
 
     h1, h2, h3, p {
         margin: 0;
@@ -274,6 +322,14 @@ article.type-system-geometric {
         border-right: none;
         border-top: none;
         margin: $base-spacing 0;
+    }
+
+    ul.project-people {
+        list-style: none;
+        padding-left: 0;
+        li {
+
+        }
     }
 
     p {
@@ -315,10 +371,10 @@ article.type-system-geometric {
     }
 
     h1 {
-        // font-family: $serif;
+        font-family: $montserrat;
         color: $charcoal;
         font-size: 1.8em;
-        font-weight: 700;
+        font-weight: normal;
         margin-bottom: 0.5em;
 
         @include media($medium-screen) {
@@ -444,7 +500,7 @@ section.events {
     z-index: 9999;
 
     @include media($large-screen) {
-        border-bottom: 1px solid darken($navigation-background, 6%);
+        //border-bottom: 1px solid darken($navigation-background, 6%);
         min-height: $navigation-height;
         padding-left: 10px;
     }
@@ -744,6 +800,10 @@ section.events {
             }
     // /Added by MJR ////////////////////////////////////////
 
+#footer {
+    background: $support-color-1;
+    width: 100%;
+}
 // Footer
 .footer {
     ///////////////////////////////////////////////////////////////////////////////////
@@ -778,6 +838,8 @@ section.events {
     $footer-disclaimer-color: transparentize($footer-color, 0);
 
     background: $footer-background;
+    margin-right: auto;
+    margin-left: auto;
     padding: ($base-spacing * 2) $gutter;
     width: 100%;
 
@@ -929,7 +991,7 @@ section.events {
         .flex-title {
             color: $flex-box-color;
             font-size: 1.2em;
-            font-weight: 800;
+            //font-weight: 800;
             margin-bottom: 0.5em;
         }
 

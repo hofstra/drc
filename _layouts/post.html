@@ -2,23 +2,22 @@
 layout: default
 ---
 
-{% if page.image %}
+{% if page.image!='' %}
+<div class="post-image"></div>
 <style type="text/css">
-div.hero {
-	background-image: url("{{ page.image }}");
-}
+    .post-image {
+        background-image: url('{{page.image}}');
+    }
 </style>
 {% endif %}
 
 <article class="type-system-geometric">
-<!-- <p class="type">{{ page.tags | join ", " }}</p> -->
 
-<div class="hero">
-	<div class="hero-inner">
-		<!-- <div class="hero-copy">		</div> -->
-	</div>
-</div>
 <h1>{{ page.title }} </h1>
+
+{% if page.people!='' %}
+<ul class="project-people">{% for person in site.data.people | sort: "last_name" %}{% if page.people contains person.id %}<li>{{ person.first_name }} {{ person.last_name }}</li>{% endif %}{% endfor %}</ul>
+{% endif %}
 
 {{ page.content | markdownify }}
 

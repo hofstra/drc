@@ -16,7 +16,7 @@ layout: default
             {% endif %}
             <h1>{{ post.title }} </h1>
             {{ post.excerpt }}
-            <a href="{{ post.url | prepend: site.baseurl }}"><button>Learn More</button></a>
+            <p><a href="{{ post.url | prepend: site.baseurl }}"><button>Learn More</button></a></p>
         {% endfor %}
     </div>
   </div>
@@ -46,7 +46,5 @@ layout: default
 </div>
 
 <div class="home-cta">
-  <div class="hero-inner">
-        <a href="/projects/"><button>View All Projects</button></a>
-  </div>
+  <a href="/projects/"><button>View All Projects</button></a>
 </div>
