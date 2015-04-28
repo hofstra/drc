@@ -1045,7 +1045,9 @@ section.events {
     .details {
         text-align: center;
         h3 {
-            font-size: 1.2em;
+            font-family: $montserrat;
+            font-size: 1.1em;
+            font-weight: normal;
             text-align: center;
         }
         ul {
