@@ -936,7 +936,7 @@ section.events {
     $flex-box-width: 18em;
     $flex-box-color: transparentize($base-font-color, 0.3);
     $flex-box-top-colors:
-        tomato,
+        /*tomato,
         #72BFBF,
         #92B1E3,
         #E3D743,
@@ -946,7 +946,19 @@ section.events {
         #92B1E3,
         #E3D743,
         #CCC,
-        #F6C05C;
+        #F6C05C;*/
+        #bbb3a1,
+        #c9c9c9,
+        #2d779d,
+        #4d4d4d,
+        #dfdcc3,
+        #416576,
+        #c9bba4,
+        #bbb3a1,
+        #c9c9c9,
+        #2d779d,
+        #4d4d4d,
+        #dfdcc3;
 
         @include clearfix;
         @include display(flex);
