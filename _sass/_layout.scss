@@ -303,6 +303,25 @@ article.type-system-geometric {
     $medium-screen: em(640) !default;
     $base-font-color: $dark-gray !default;
 
+    .project-has-people {
+        @include media($large-screen) {
+            float: left; width: 75%;
+        }
+    }
+    .project-sidebar-people {
+        h2 {
+            font-family: $montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: normal;
+            margin-bottom: .25em;
+        }
+        text-align: center;
+        @include media($large-screen) {
+            float: right; width: 25%;
+        }
+    }
+
     padding: 20px 20px 40px;
 
     @include media($large-screen) {

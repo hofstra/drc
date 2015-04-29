@@ -15,10 +15,36 @@ layout: default
 
 <h1>{{ page.title }} </h1>
 
-{% if page.people!='' %}
-<ul class="project-people">{% for person in site.data.people | sort: "last_name" %}{% if page.people contains person.id %}<li>{{ person.first_name }} {{ person.last_name }}</li>{% endif %}{% endfor %}</ul>
-{% endif %}
-
+<div{% if page.people!='' %} class="project-has-people"{% endif %} style="">
 {{ page.content | markdownify }}
+</div>
+
+{% if page.people!='' %}
+<div class="project-sidebar-people" style="">
+    {% if page.lead_person!='' %}
+        {% for person in site.data.people %}
+            {% if page.lead_person contains person.id %}
+    <h2>Project Lead:</h2>
+    <div class="person">
+        <div class="photo">
+        {% if person.photo!='' %}
+            <img src="{{ person.photo }}" />
+        {% else %}
+            <img src="/images/people/nophoto.jpg" />
+        {% endif %}
+        </div>
+        <div class="details">
+            <h3>{{ person.first_name }} {{ person.last_name }}</h3>
+        </div>
+    </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    {% if page.people!='' %}
+    <h2>Project Team:</h2>
+    <ul class="project-people">{% for person in site.data.people | sort: "last_name" %}{% if page.people contains person.id %}<li>{{ person.first_name }} {{ person.last_name }}</li>{% endif %}{% endfor %}</ul>
+    {% endif %}
+</div>
+{% endif %}
 
 </article>
