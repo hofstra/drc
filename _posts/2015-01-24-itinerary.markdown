@@ -6,7 +6,7 @@ categories: projects
 image: '/images/wenceslas_hollar.jpg'
 published: true
 feature: false
-lead_person: "1"
+lead_person: "3"
 people:
   - "3"
   - "1"
