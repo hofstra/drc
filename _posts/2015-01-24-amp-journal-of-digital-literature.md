@@ -7,7 +7,10 @@ author: Janet Kaplan
 date: 2015-01-21 21:46:19
 published: true
 feature: false
+<!-- project_url: http://amp.hofstradrc.org/ -->
+lead_person: "4"
 people:
+  - "4"
 image: "/images/amp.png"
 
 ---

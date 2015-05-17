@@ -7,7 +7,8 @@ tags: [general, information]
 ---
 
 <div class="people">
-{% for person in site.data.people | sort: 'last_name' %}
+{% assign people = site.data.people | sort: 'last_name' %}
+{% for person in people %}
 <div class="person">
     <div class="photo">
 {% if person.photo!='' %}

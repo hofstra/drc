@@ -24,9 +24,9 @@ layout: default
 
 
 <div class="cards">
-  {% assign projects = site.categories.projects | where:"feature",false %}
+  {% assign projects = site.categories.projects | where:"feature",true  %}
   {% assign published_projects = projects | where:"published",true %}
-  {% for post in published_projects limit:3  %}
+  {% for post in published_projects limit:3 offset:1 sort: 'date' %}
   <a class="card" href="{{ post.url | prepend: site.baseurl }}">
     <div class="card-image">
       {% if post.image %}

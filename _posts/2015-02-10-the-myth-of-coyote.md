@@ -1,12 +1,16 @@
 ---
 layout: post
 title: "Tracking Coyote: Trickster Myths and Trappers' Tales"
-date: 2015-02-10
+date: 2015-01-20
 categories: projects
 tags: []
 image: /images/coyote.jpg
 published: true
 feature: false
+lead_person: "7"
+people:
+  - "7"
+
 ---
 
 This site archives myths about the Native American trickster Coyote and tales collected from animal trappers, who attempted to contain and in some cases eradicate the coyote in the 19th and 20th centuries.

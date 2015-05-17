@@ -3,27 +3,37 @@ layout: default
 ---
 
 {% if page.image!='' %}
+{% if page.project_url!='' %}
+<div class="post-image" onclick='window.open("{{ page.project_url }}");'></div>
+{% else %}
 <div class="post-image"></div>
+{% endif %}
+
 <style type="text/css">
     .post-image {
         background-image: url('{{page.image}}');
+    }
+    .post-image a {
+        width:1088px;
+        height:300px;
+        text-decoration: none;
     }
 </style>
 {% endif %}
 
 <article class="type-system-geometric">
 
-<h1>{{ page.title }} </h1>
+<h1>{{ page.title }}</h1>
 
-<div{% if page.people!='' %} class="project-has-people"{% endif %} style="">
+<div class="project-has-people" style="">
 {{ page.content | markdownify }}
 </div>
 
-{% if page.people!='' %}
 <div class="project-sidebar-people" style="">
+{% if page.people!='' %}
     {% if page.lead_person!='' %}
         {% for person in site.data.people %}
-            {% if page.lead_person contains person.id %}
+            {% if page.lead_person == person.id %}
     <h2>Project Lead:</h2>
     <div class="person">
         <div class="photo">
@@ -44,7 +54,12 @@ layout: default
     <h2>Project Team:</h2>
     <ul class="project-people">{% for person in site.data.people | sort: "last_name" %}{% if page.people contains person.id %}<li>{{ person.first_name }} {{ person.last_name }}</li>{% endif %}{% endfor %}</ul>
     {% endif %}
+{% endif %}
+{% if page.project_url!='' %}
+<div class="person">
+    <a href="{{ page.project_url }}"><button>View Project</button></a>
 </div>
 {% endif %}
+</div>
 
 </article>

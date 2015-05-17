@@ -1050,7 +1050,7 @@ section.events {
 
 .page-people {
     h1 {
-        text-align: center;
+        text-align: left;
     }
 }
 .people {
@@ -1066,12 +1066,15 @@ section.events {
     display: inline-block;
     padding: 10px;
     position: relative;
-    text-align: left;
+    text-align: center;
     vertical-align: top;
     width: 200px;
 
     .photo {
         text-align: center;
+        img {
+            // border: 1px black solid;    
+        }
     }
     .details {
         text-align: center;

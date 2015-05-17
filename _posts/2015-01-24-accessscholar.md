@@ -7,6 +7,9 @@ tags: []
 published: true
 feature: false
 image: "/images/access_scholar.png"
+lead_person: "5"
+people:
+  - "5"
 
 ---
 

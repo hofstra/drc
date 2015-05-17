@@ -5,9 +5,13 @@ categories: projects
 tags: []
 author: "David A. Powell"
 published: true
-feature: false
+feature: true
 image: "/images/sand.png"
 date:   2015-02-02 21:46:19
+project_url: http://gsa.hofstradrc.org/
+lead_person: "10"
+people:
+  - "10"
 
 ---
 
