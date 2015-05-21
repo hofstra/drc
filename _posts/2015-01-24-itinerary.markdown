@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Itinerary"
+title: "'A Frightful Number': Mapping Daniel Defoe's A Journal of the Plague Year"
 date: 2015-05-15 14:00:00
 categories: projects
 image: '/images/itinerary.png'
@@ -14,7 +14,7 @@ people:
 
 ---
 
-'A Frightful Number': Mapping Daniel Defoe's A Journal of the Plague Year" offers students of literature and fellow scholars a different way of reading and experiencing Defoe's novel, one that places his narration of the Great Plague of London (1664-1665) within the broader history of cartography during the late seventeenth and early eighteenth centuries.
+'A Frightful Number': Mapping Daniel Defoe's A Journal of the Plague Year offers students of literature and fellow scholars a different way of reading and experiencing Defoe's novel, one that places his narration of the Great Plague of London (1664-1665) within the broader history of cartography during the late seventeenth and early eighteenth centuries.
 
 <!--more-->
 
@@ -25,3 +25,11 @@ As a supplement to the novel, "'A Frightful Number'" represents and engages with
 	background-position: center 0px;
 }	
 </style>
+
+<!-- 
+
+Add Forum as sidebar list
+	- DRC Forum
+	- 
+
+-->
