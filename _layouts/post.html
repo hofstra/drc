@@ -50,10 +50,12 @@ layout: default
             {% endif %}
         {% endfor %}
     {% endif %}
+    {% comment %}
     {% if page.people!='' %}
     <h2>Project Team:</h2>
     <ul class="project-people">{% for person in site.data.people | sort: "last_name" %}{% if page.people contains person.id %}<li>{{ person.first_name }} {{ person.last_name }}</li>{% endif %}{% endfor %}</ul>
     {% endif %}
+    {% endcomment %}
 {% endif %}
 {% if page.project_url!='' %}
 <div class="person">
