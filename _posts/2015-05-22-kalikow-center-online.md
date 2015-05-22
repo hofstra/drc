@@ -5,7 +5,7 @@ date: 2015-05-01
 categories: projects
 tags: []
 image: /images/kalikow.jpg
-published: true
+published: false
 feature: false
 lead_person: "6"
 people:
