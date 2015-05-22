@@ -30,10 +30,3 @@ As a supplement to the novel, "'A Frightful Number'" represents and engages with
 	background-position: center 0px;
 }	
 </style>
-
-{% comment %}
-Add Forum as sidebar list
-	- DRC Forum
-	- 
-
-{% endcomment %}
