@@ -1,5 +1,4 @@
 id,role,first_name,last_name,email,photo
-1,staff,John,Bryant,John.L.Bryant@hofstra.edu,/images/people/john.bryant.jpg
 2,director,Vern,Walker,Vern.R.Walker@hofstra.edu,/images/people/vern.walker.jpg
 3,director,Adam,Sills,Adam.G.Sills@hofstra.edu,/images/people/adam.sills.jpg
 4,director,Janet,Kaplan,Janet.E.Kaplan@hofstra.edu,/images/people/janet.kaplan.jpg
@@ -10,9 +9,10 @@ id,role,first_name,last_name,email,photo
 9,director,Lisa,Merrill,Lisa.Merrill@hofstra.edu,/images/people/lisa.merrill.jpg
 10,director,David,Powell,David.A.Powell@hofstra.edu,/images/people/david.powell.jpg
 11,director,Mario,Ruiz,Mario.Ruiz@hofstra.edu,
-12,staff,Bob,Juckiewicz,Robert.W.Juckiewicz@hofstra.edu,/images/people/robert.juckiewicz.jpg
-13,staff,Brian,Ferris,Brian.P.Ferris@hofstra.edu,/images/people/brian.ferris.jpg
-13,staff,Kevin,Pechin,kevin.F.Pechin@hofstra.edu,/images/people/kevin.pechin.jpg
-14,staff,Ethna,Lay,Ethna.D.Lay@hofstra.edu,/images/people/ethna.lay.jpg
+1,staff,John,Bryant,John.L.Bryant@hofstra.edu,/images/people/john.bryant.jpg
 15,staff,Keri,Crocco,Keri.Plassmann-Crocco@hofstra.edu,/images/people/keri.crocco.jpg
+13,staff,Brian,Ferris,Brian.P.Ferris@hofstra.edu,/images/people/brian.ferris.jpg
 16,staff,Jamie,Folsom,jamiefolsom@gmail.com,/images/people/folsom.jamie.jpg
+12,staff,Bob,Juckiewicz,Robert.W.Juckiewicz@hofstra.edu,/images/people/robert.juckiewicz.jpg
+14,staff,Ethna,Lay,Ethna.D.Lay@hofstra.edu,/images/people/ethna.lay.jpg
+13,staff,Kevin,Pechin,kevin.F.Pechin@hofstra.edu,/images/people/kevin.pechin.jpg
