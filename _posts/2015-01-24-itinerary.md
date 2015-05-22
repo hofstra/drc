@@ -5,7 +5,7 @@ date: 2015-05-15 14:00:00
 categories: projects
 image: '/images/itinerary.png'
 project_url: 'http://staging.itinerary.drc.clearbold.com.s3-website-us-east-1.amazonaws.com'
-tool_url: 'http://staging.itinerary.drc.clearbold.com.s3-website-us-east-1.amazonaws.com'
+tool_url: 'https://github.com/hofstra/itinerary/blob/master/docs/write-up.md'
 published: true
 feature: true
 lead_person: "3"

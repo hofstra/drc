@@ -17,6 +17,9 @@ layout: default
             <h1>{{ post.title }} </h1>
             {{ post.excerpt }}
             <p><a href="{{ post.url | prepend: site.baseurl }}"><button>Learn More about the Project</button></a></p>
+            {% if post.tool_url != "" %}
+            <p><a href="{{ post.tool_url | prepend: site.baseurl }}"><button>Learn More about the Tool</button></a></p>
+            {% endif %}
         {% endfor %}
     </div>
   </div>

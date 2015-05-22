@@ -14,7 +14,9 @@ Hofstra's DRC sponsors conferences, speakers, and workshops on campus to promote
 {% assign events = site.categories.events %}
 {% for post in events limit:10 %}
 <h3><a href="{{ post.link }}">{{ post.title }}</a></h3>
+{% comment %}
 <p>{{ post.display_date }}<br />
+{% endcomment %}
 {{ post.location }}</p>
 {{ post.content }}
 {% endfor %}
