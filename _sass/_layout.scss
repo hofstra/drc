@@ -85,6 +85,11 @@ a img {
             padding-right: 10px;
             padding-bottom: 40px;
             padding-left: 10px;
+            p {
+                // display: inline-block !important                
+                // margin-left: 107px;
+            }
+
 
             h1 {
                 font-family: $montserrat;
@@ -116,6 +121,7 @@ a img {
             @include button(flat, $base-accent-color);
             @include button(flat, $highlight-color);
             padding: 0.7em 1em;
+
         }
     }
 }

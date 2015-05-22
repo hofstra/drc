@@ -2,15 +2,9 @@
 layout: default
 ---
 
-<article class="type-system-geometric">
-<h1>{{ page.title }}</h1>
-<h2>
-Hofstra's DRC sponsors conferences, speakers, and workshops on campus to promote discussion relevant to the Digital Humanities community.	
-</h2>
-{{ content }}
-</article>
-
 <section class="events">
+<h1>{{ page.title }}</h1>
+<h2>Hofstra's DRC sponsors conferences, speakers, and workshops on campus to promote discussion relevant to the Digital Humanities community.</h2>
 {% assign events = site.categories.events %}
 {% for post in events limit:10 %}
 <h3><a href="{{ post.link }}">{{ post.title }}</a></h3>
