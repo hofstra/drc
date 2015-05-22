@@ -4,7 +4,7 @@ layout: default
 
 {% if page.image!='' %}
 {% if page.project_url!='' %}
-<div class="post-image" onclick='window.open("{{ page.project_url }}");'></div>
+<div class="post-image" onclick='window.open("{{ page.project_url }}");' style="cursor: pointer;"></div>
 {% else %}
 <div class="post-image"></div>
 {% endif %}
@@ -57,7 +57,7 @@ layout: default
 {% endif %}
 {% if page.project_url!='' %}
 <div class="person">
-    <a href="{{ page.project_url }}"><button>View Project</button></a>
+    <a href="{{ page.project_url }}" target="{{ page.title | slugify }}"><button>View Project</button></a>
 </div>
 {% endif %}
 </div>
