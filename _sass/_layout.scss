@@ -773,6 +773,16 @@ section.events {
             margin-bottom: 0px;
             padding-top: 20px;
             padding-bottom: 20px;
+            // Added by JF
+            p#description {
+                width: 50%;
+                font-family: 'Montserrat', sans-serif;
+                float:right;
+                font-style: italic;
+                color: #666;
+                font-size: 15px;
+          }
+            // / Added by JF
     }
         .logo-header {
             padding-right: 20px;
@@ -1116,3 +1126,4 @@ section.events {
         padding-top: 20px;
     }
 }
+
