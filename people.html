@@ -5,69 +5,80 @@ title: People
 permalink: /people/
 tags: [general, information]
 ---
-
 <div class="people">
-{% assign people = site.data.people | sort: 'last_name' %}
-{% for person in people %}
-<div class="person">
-    <div class="photo">
-{% if person.photo!='' %}
-        <img width="150" src="{{ person.photo }}" />
-{% else %}
-        <img width="150" src="/images/people/nophoto.jpg" />
-{% endif %}
-    </div>
-    <div class="details">
-        <h3>{{ person.first_name }} {{ person.last_name }}</h3>
-
-        <ul>
-{% for post in site.posts %}
-{% if post.people contains person.id %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endif %}
-{% endfor %}
-        </ul>
-    </div>
+    <h2>DRC Staff</h2>
+    {% assign staff = site.data.people | where:'role','staff' %}
+    {% for person in staff %}
+        <div class="person">
+            <div class="photo">
+                {% if person.photo!='' %}
+                    <img width="100" src="{{ person.photo }}" />
+                {% else %}
+                    <img width="100" src="/images/people/nophoto.jpg" />
+                {% endif %}
+            </div>
+            <div class="details">
+                <h3>{{ person.first_name }} {{ person.last_name }}</h3>
+                <ul>
+                    {% for post in site.posts %}
+                        {% if post.lead_person == person.id %}
+                            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    {% endfor %}
+    <h2>Project Directors</h2>
+    {% assign directors = site.data.people | where:'role','director' %}
+    {% for person in directors %}
+        <div class="person">
+            <div class="photo">
+                {% if person.photo!='' %}
+                    <img width="100" src="{{ person.photo }}" />
+                {% else %}
+                    <img width="100" src="/images/people/nophoto.jpg" />
+                {% endif %}
+            </div>
+            <div class="details">
+                <h3>{{ person.first_name }} {{ person.last_name }}</h3>
+                <ul>
+                    {% for post in site.posts %}
+                        {% if post.lead_person == person.id %}
+                            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    {% endfor %}
 </div>
-{% endfor %}
-</div>
-
-<!-- 
-
+{% comment %}
 People Page: Two groupings
-- Two Rows.
-    - DRC Staff
-        - Add Bob, Brian, Kevin
-        - JB, EL, Keri, JF
-    - Experts
-        - Don't list on people page
-        - Do list on project
-        - 
+[x] Two Rows.
+[x] DRC Staff
+[x] Add Bob, Brian, Kevin
+[x] JB, EL, Keri, JF
+[x] Experts
+[x] Don't list on people page
+[ ] Do list on project
 
+[x] Project Directors
+[ ] Meena Bose: The Kalikow Center Online
 
-- Project Directors
-    - Meena Bose: The Kalikow Center Online
-    - 
+[x] Photos half the size of current.
+[x] Better one of John!
 
-- Photos half the size of current.
-    √ Better one of John!
-    - 
-
-- Project Relationships
-    - MEL and Itinerary <=> JB
-    - Adam <=> "A Frightful Number"
-    - Vern <=> Annotation Studio, RSLT
-
-- Team
-    - FN
-    - RSLT
-    - Sand
-        - Keri
-        - JF
-        - Ethna
-
-- DRC 
-
-
-
- -->
+[ ] Project Relationships
+    [ ] MEL and Itinerary <=> JB
+    [ ] Adam <=> "A Frightful Number"
+    [ ] Vern <=> Annotation Studio, RSLT
+[ ] Team
+    [ ] FN
+    [ ] RSLT
+    [ ] Sand
+        [ ] Keri
+        [ ] JF
+[ ] Ethna
+[ ] DRC
+{% endcomment %}
