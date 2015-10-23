@@ -5,7 +5,7 @@ date: 2015-05-01
 categories: projects
 tags: []
 image: /images/kalikow.jpg
-published: false
+published: true
 feature: false
 lead_person: "6"
 people:
@@ -13,9 +13,4 @@ people:
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The Peter S. Kalikow Center for the Study of the American Presidency hosts several panels on U.S. presidential leadership and policy making every semester that feature scholars, journalists, and policy makers.  For students, faculty, and guests who are unable to attend, Hofstra’s Digital Research Center provides an opportunity to review the discussion.  The DRC will host video coverage of Kalikow Center panels (including those in the Center’s symposia and conferences) to advance the Center’s commentary and analysis in multiple research agendas, for students, faculty, journalists, and others interested in presidential studies.
