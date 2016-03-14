@@ -4,7 +4,7 @@ title: "'A Frightful Number': Mapping Daniel Defoe's A Journal of the Plague Yea
 date: 2015-05-15 14:00:00
 categories: projects
 image: '/images/itinerary.png'
-project_url: 'http://staging.itinerary.drc.clearbold.com.s3-website-us-east-1.amazonaws.com'
+project_url: 'http://hofstra.github.io/itinerary'
 tool_url: 'https://github.com/hofstra/itinerary/blob/master/docs/write-up.md'
 published: true
 feature: true
@@ -19,7 +19,7 @@ people:
 
 <!--more-->
 
-<!-- 
+<!--
 'A Frightful Number': Mapping Daniel Defoe's A Journal of the Plague Year offers students of literature and fellow scholars a different way of reading and experiencing Defoe's novel, one that places his narration of the Great Plague of London (1664-1665) within the broader history of cartography during the late seventeenth and early eighteenth centuries.
  -->
 
@@ -28,5 +28,5 @@ As a supplement to the novel, "'A Frightful Number'" represents and engages with
 <style type="text/css">
 .post-image {
 	background-position: center 0px;
-}	
+}
 </style>

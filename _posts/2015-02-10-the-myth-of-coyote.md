@@ -4,6 +4,7 @@ title: "Tracking Coyote: Trickster Myths and Trappers' Tales"
 date: 2015-01-20
 categories: projects
 tags: []
+project_url: 'http://hofstra.github.io/coyote'
 image: /images/coyote.jpg
 published: true
 feature: false
@@ -24,4 +25,3 @@ European Americans did not share this mythic view of Coyote, despite having thei
 Users of this site will assemble their own collections of myths and tales, tracking coyote across history, ideology, and culture.
 
 <!-- Click on one of the photographs below to begin. -->
-
