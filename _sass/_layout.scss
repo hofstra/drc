@@ -49,13 +49,16 @@ a img {
 
     //@include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
     //background-color: #324766;
-    background-color: #666;
+    background-color: #a6a6a6;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    //padding-bottom: 3em;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     // height: 250px;
+
+    width: 100%;
 
     .hero-logo img {
         height: 4em;
@@ -67,26 +70,71 @@ a img {
         @include clearfix;
         color: $hero-color;
         margin: auto;
-        //padding: 3.5em;
-        //padding-top: 20px;
+        max-width: 1280px;
         padding-right: 0px;
         padding-left: 0px;
-        //text-align: center;
-        @include media($large-screen) {
-            //padding: 3.5em;
+        .hero-copy:nth-of-type(1) {
+            float: left;
+            padding-right: 10px;
+            width: 800px;
+        }
+        .hero-copy:nth-of-type(2) {
+            float: left;
+            padding-left: 10px;
+            width: 480px;
         }
 
+@media all and (max-width: 1280px) {
+        .hero-copy:nth-of-type(1),
+        .hero-copy:nth-of-type(2) {
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1280px;
+            padding-right: 0;
+            padding-left: 0;
+            width: 100%;
+        }
+        .hero-copy:nth-of-type(1) {
+            margin-bottom: 20px;
+        }
+}
+
         .hero-copy {
+            &:first-child .hero-copy-inner {
+                background: url('/images/coyote.jpg') no-repeat center center;
+            }
+            &:last-child .hero-copy-inner {
+                background: url('/images/forum-home.jpg') no-repeat center center;
+            }
+            &:first-child .hero-copy-inner > div {
+                background-color: transparentize($base-accent-color, 0.5);
+                min-height: 550px;
+                padding-top: 40px;
+                padding-right: 10px;
+                padding-left: 10px;
+                @media all and (max-width: 1280px) {
+                    min-height: 0;
+                    padding-bottom: 40px;
+                }
+            }
+            &:last-child .hero-copy-inner > div {
+                background-color: transparentize(#111, 0.5);
+                min-height: 550px;
+                padding-top: 40px;
+                padding-right: 10px;
+                padding-left: 10px;
+                @media all and (max-width: 1280px) {
+                    min-height: 0;
+                    padding-bottom: 40px;
+                }
+            }
             //background-color: rgba(180, 180, 144, 0.8);
             //background-color: transparentize($highlight-color, 0.5);
-            background-color: transparentize($base-accent-color, 0.5);
+
             //text-align: center;
-            padding-top: 40px;
-            padding-right: 10px;
-            padding-bottom: 40px;
-            padding-left: 10px;
+
             p {
-                // display: inline-block !important                
+                // display: inline-block !important
                 // margin-left: 107px;
             }
 
@@ -104,6 +152,9 @@ a img {
                     max-width: 80%;
                 }
             }
+            &:last-child h1 {
+                margin-bottom: 0;
+            }
 
             p {
                 //font-weight: 200;
@@ -114,6 +165,9 @@ a img {
                     font-size: 1.1em;
                     max-width: 80%;
                 }
+            }
+            &:last-child p.subhead {
+                font-weight: bold;
             }
         }
 
@@ -1089,7 +1143,7 @@ section.events {
     .photo {
         text-align: center;
         img {
-            // border: 1px black solid;    
+            // border: 1px black solid;
         }
     }
     .details {
@@ -1132,4 +1186,3 @@ section.events {
         padding-top: 20px;
     }
 }
-

@@ -1,31 +1,37 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="hero">
-  <div class="hero-inner">
-      <div class="hero-copy">
-        {% assign projects = site.categories.projects | where:"feature",true %}
-        {% for post in projects limit:1 %}
-            {% if post.image %}
-            <style type="text/css">
-              div.hero {
-                background-image: url("{{ post.image }}");
-              }
-            </style>
-            {% endif %}
-            <h1>{{ post.title }} </h1>
-            {{ post.excerpt }}
-            <p><a href="{{ post.url | prepend: site.baseurl }}"><button>Learn More about the Project</button></a></p>
-            {% if post.tool_url != "" %}
-            <p><a href="{{ post.tool_url | prepend: site.baseurl }}"><button>Learn More about the Tool</button></a></p>
-            {% endif %}
-        {% endfor %}
-    </div>
-  </div>
+<div class="cards">
+    <a class="card" href="/projects/rslt.html">
+        <div class="card-image">
+            <img src="/images/rslt.png" alt="" />
+        </div>
+        <div class="card-header">Reasoning Structures in Legal Texts</div>
+        <div class="card-copy">
+            <p>The Reasoning Structures in Legal Texts (RSLT) project is dedicated to studying the reasoning structures that we can find in legal texts, primarily in judicial and administrative decisions.</p>
+        </div>
+    </a>
+    <a class="card" href="/projects/mel.html">
+        <div class="card-image">
+            <img src="/images/melville.jpg" alt="" />
+        </div>
+        <div class="card-header">The Melville Electronic Library</div>
+        <div class="card-copy">
+            <p>The Melville Electronic Library (MEL) is a born-digital critical archive that features scholarly editions of all versions of all works by American poet and novelist Herman Melville (1819-1891). With MEL’s innovative “fluid text” editing tool TextLab, visitors to the site can track Melville’s revisions in writings in manuscript and the revisions made by him and editors in his print editions. With the projected tool, MELCat, users will also be able to compare images, sources, and adaptations to Melville’s originals in a workspace for creating essays, exhibits, and presentations. When completed, this NEH-funded “We the People” project will be the principal online center for Melville studies, research, and pedagogy.</p>
+        </div>
+    </a>
+    <a class="card" href="/projects/itinerary.html">
+        <div class="card-image">
+            <img src="/images/Itinerary.680x600.png" alt="" />
+        </div>
+        <div class="card-header">&ldquo;A Frightful Number!&rdquo;: Mapping Daniel Defoe&rsquo;s A Journal of the Plague Year</div>
+        <div class="card-copy">
+            <p>&ldquo;A Frightful Number&rdquo; uses data culled from Daniel Defoe&rsquo;s &ldquo;creative non-fiction&rdquo; Journal of the Plague Year and from historical sources to track the spread of the 1665 London Plague. Created with Hofstra DRC&rdquo;s innovative mapping tool <em>Itinerary</em>, the site annotates the epidemic&rsquo;s progress month by month, parish by parish.</p>
+        </div>
+    </a>
 </div>
-
-
+{% comment %}
 <div class="cards">
   {% assign projects = site.categories.projects | where:"feature",true  %}
   {% assign published_projects = projects | where:"published",true %}
@@ -47,6 +53,7 @@ layout: default
   </a>
   {% endfor %}
 </div>
+{% endcomment %}
 
 <div class="home-cta">
   <a href="/projects/"><button>View All Projects</button></a>

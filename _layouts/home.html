@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body{% if page.id!='' %} class="page-{{ page.id }}"{% endif %}>
+  {% include header.html %}
+
+    <div class="hero">
+        <div class="hero-inner">
+            <div class="hero-copy"><div class="hero-copy-inner"><div>
+                <h1>Tracking Coyote: Trickster Myths and Trapper&rsquo;s Tales</h1>
+                <p>This site archives myths about the Native American Coyote and tales collected from animal trappers, who attempted to contain and in some cases eradicate the coyote in the 19th and 20th centuries.</p>
+                <p><a href="/projects/the-myth-of-coyote.html"><button>Learn More About the Project</button></a></p>
+            </div></div></div>
+            <div class="hero-copy"><div class="hero-copy-inner"><div>
+                <h1>DRC Forum</h1>
+                <p class="subhead">Digital Thinking/Critical Thinking: Building the Humanities at Hofstra</p>
+                <p>This two-day conference focuses on how to create a Digital Research Center at Hofstra that will enable faculty and students to develop digital solutions to critical and scholarly problems.</p>
+                <p><a href="/events/"><button>Learn More About the Forum</button></a></p>
+            </div></div></div>
+        </div>
+        {% comment %}
+          <div class="hero-copy">
+            {% assign projects = site.categories.projects | where:"feature",true %}
+            {% for post in projects limit:1 %}
+                {% if post.image %}
+                <style type="text/css">
+                  div.hero {
+                    background-image: url("{{ post.image }}");
+                  }
+                </style>
+                {% endif %}
+                <h1>{{ post.title }} </h1>
+                {{ post.excerpt }}
+                <p><a href="{{ post.url | prepend: site.baseurl }}"><button>Learn More about the Project</button></a></p>
+                {% if post.tool_url != "" %}
+                <p><a href="{{ post.tool_url | prepend: site.baseurl }}"><button>Learn More about the Tool</button></a></p>
+                {% endif %}
+            {% endfor %}
+        </div>
+        {% endcomment %}
+    </div>
+
+  <section id="content">
+  {{ content }}
+  </section>
+
+  <section id="footer">
+  {% include footer.html %}
+  </section>
+
+</body>
+
+</html>
