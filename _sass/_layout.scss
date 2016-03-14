@@ -835,12 +835,18 @@ section.events {
             padding-bottom: 20px;
             // Added by JF
             p#description {
-                width: 50%;
-                font-family: 'Montserrat', sans-serif;
-                float:right;
-                font-style: italic;
                 color: #666;
+                float: right;
+                font-family: 'Montserrat', sans-serif;
                 font-size: 15px;
+                font-style: italic;
+                width: 50%;
+@include media($large-screen) {
+                text-align: right;
+}
+@media all and (max-width: 640px) {
+                display: none;
+}
           }
             // / Added by JF
     }
