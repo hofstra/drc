@@ -103,7 +103,7 @@ a img {
 
         .hero-copy {
             &:first-child .hero-copy-inner {
-                background: url('/images/coyote.jpg') no-repeat center center;
+                background: url('/images/coyote.jpg') no-repeat center left;
             }
             &:last-child .hero-copy-inner {
                 background: url('/images/forum-home.jpg') no-repeat center center;
@@ -466,7 +466,7 @@ article.type-system-geometric {
         }
     }
 
-    h2 {
+    h2, p.subhead {
         font-family: $serif;
         font-size: 1.2em;
         font-style: italic;
@@ -477,6 +477,16 @@ article.type-system-geometric {
         @include media($medium-screen) {
             font-size: 1.3em;
         }
+    }
+    h2.heading { /* This is so wrong, but the H2 has been used for long-form text... */
+        color: $charcoal;
+        font-family: $montserrat;
+        font-size: 1.6em;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1.4em;
+        margin-bottom: 1.1em;
+        padding-top: 2em;
     }
 
     code {
