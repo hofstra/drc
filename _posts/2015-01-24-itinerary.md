@@ -9,13 +9,14 @@ tool_url: 'https://github.com/hofstra/itinerary/blob/master/docs/write-up.md'
 published: true
 feature: true
 lead_person: "3"
+blurb: "&ldquo;A Frightful Number&rdquo; uses data culled from Daniel Defoe&rsquo;s &ldquo;creative non-fiction&rdquo; Journal of the Plague Year and from historical sources to track the spread of the 1665 London plague. Created with DRC&rsquo;s innovative mapping tool Itinerary, the site annotates the epidemic&rsquo;s progress month by month, parish by parish."
 people:
   - "3"
   - "1"
 
 ---
 
-“A Frightful Number” uses data culled from Daniel Defoe’s “creative non-fiction” Journal of the Plague Year and from historical sources to track the spread of the 1665 London plague.  Created with Hofstra DRC’s innovative mapping tool Itinerary, the site annotates the epidemic’s progress month by month, parish by parish.
+“A Frightful Number” uses data culled from Daniel Defoe’s “creative non-fiction” Journal of the Plague Year and from historical sources to track the spread of the 1665 London plague.  Created with DRC’s innovative mapping tool Itinerary, the site annotates the epidemic’s progress month by month, parish by parish.
 
 <!--more-->
 
