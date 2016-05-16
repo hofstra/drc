@@ -108,6 +108,11 @@ a img {
             &:last-child .hero-copy-inner {
                 background: url('/images/forum-home.jpg') no-repeat center center;
             }
+@media all and (max-width: 1280px) {
+            &:first-child .hero-copy-inner {
+                background-position: center center;
+            }
+}
             &:first-child .hero-copy-inner > div {
                 background-color: transparentize($base-accent-color, 0.5);
                 min-height: 520px;
