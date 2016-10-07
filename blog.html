@@ -1,0 +1,17 @@
+---
+layout: page
+title: DRC Blog
+permalink: /blog/
+tags: [work]
+---
+
+<section>
+<div>
+  {% for post in site.categories.blog %}
+    <a href="{{ post.url | prepend: site.baseurl }}" class="">
+      <h2 class="title">{{ post.title }}</h1>
+      <p>{{ post.excerpt }}</p>
+    </a>
+  {% endfor %}
+</div>
+</section>
