@@ -14,11 +14,11 @@
       </div></a>
       {% assign lab_feature = site.categories.lab_feature | first %}
       {% if lab_feature %}
-        <div class="column-feature-wrapper" style="background: url('{{lab_feature.image}}') no-repeat center left;">
+        <div class="column-feature-wrapper" style="background: url('{{lab_feature.image | prepend: site.baseurl}}') no-repeat center left;">
           <div class="column-feature">
             <h2>{{ lab_feature.title }}</h2>
             <p>{{ lab_feature.blurb }}</p>
-            <p><a href="{{ lab_feature.url }}"><button>Learn more about the project</button></a></p>
+            <p><a href="{{ lab_feature.url | prepend: site.baseurl }}"><button>Learn more about the project</button></a></p>
           </div>
         </div>
       {% endif %}
@@ -30,7 +30,7 @@
           {% unless post.image %}
             {% assign image_url = "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" %}
           {% endunless %}
-          <div class="card-image" style="background-image: url('{{ image_url }}');"></div>
+          <div class="card-image" style="background-image: url('{{ image_url | prepend: site.baseurl }}');"></div>
           <div class="card-header">
             {{ post.title }}
           </div>
@@ -55,7 +55,7 @@
             {% unless post.image %}
               {% assign image_url = "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" %}
             {% endunless %}
-            <div class="card-image" style="background-image: url('{{ image_url }}');"></div>
+            <div class="card-image" style="background-image: url('{{ image_url | prepend: site.baseurl }}');"></div>
             <div class="card-header">
               {{ post.title }}
             </div>
@@ -77,7 +77,7 @@
         <h1>DRC Forum</h1>
         <p>Building communities interested in pursuing digital scholarship and learning.</p>
       </div></a>
-      <div class="column-feature-wrapper" style="background: url('/images/forum-home.jpg') no-repeat center center;">
+      <div class="column-feature-wrapper" style="background: url('{{ site.baseurl }}/images/forum-home.jpg') no-repeat center center;">
         <div class="column-feature">
           <h2>DRExChange 2017</h2>
           <p>Our annual DRExChange is at Hofstra University on March 23rd.</p>
