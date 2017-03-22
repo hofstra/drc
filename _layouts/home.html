@@ -8,7 +8,7 @@
 
   <div class="new-layout">
     <div class="lab-column">
-      <a href="/projects/"><div class="column-header">
+      <a href="{{ site.baseurl }}/projects/"><div class="column-header">
         <h1>DRC Lab</h1>
         <p>&nbsp;<br />&nbsp;<!-- lab tagline here? --></p>
       </div></a>
@@ -41,12 +41,12 @@
         {% endfor %}
       </div>
       <div class="cards">
-        <a class="card" href="/projects/">
+        <a class="card" href="{{ site.baseurl }}/projects/">
           <div class="card-header">View all projects &rarr;</div>
         </a>
       </div>
       <div class="toolkit">
-        <a href="/tools/"><div class="toolkit-header">The DRC Toolkit</div></a>
+        <a href="{{ site.baseurl }}/tools/"><div class="toolkit-header">The DRC Toolkit</div></a>
         <div class="cards">
           {% assign tools = site.categories.tools | where:"feature",true  %}
           {% for post in tools limit:3 sort: 'date' %}
@@ -66,14 +66,14 @@
           {% endfor %}
         </div>
         <div class="cards">
-          <a class="card" href="/tools/">
+          <a class="card" href="{{ site.baseurl }}/tools/">
             <div class="card-header">View all tools &rarr;</div>
           </a>
         </div>
       </div>
     </div>
     <div class="forum-column">
-      <a href="/events/"><div class="column-header">
+      <a href="{{ site.baseurl }}/events/"><div class="column-header">
         <h1>DRC Forum</h1>
         <p>Building communities interested in pursuing digital scholarship and learning.</p>
       </div></a>
@@ -81,7 +81,7 @@
         <div class="column-feature">
           <h2>DRExChange 2017</h2>
           <p>Our annual DRExChange is at Hofstra University on March 23rd.</p>
-          <p><a href="/events/"><button>Find out about our DRExChange</button></a></p>
+          <p><a href="{{ site.baseurl }}/events/"><button>Find out about our DRExChange</button></a></p>
         </div>
       </div>
       <div class="cards">
@@ -96,7 +96,7 @@
           </div>
         </a>
         {% endfor %}
-        <a class="card" href="/blog/">
+        <a class="card" href="{{ site.baseurl }}/blog/">
           <div class="card-header">View all blog posts &rarr;</div>
         </a>
       </div>
