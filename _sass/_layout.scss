@@ -19,6 +19,7 @@ $home-forum-accent-color: #444;
 $montserrat: 'Montserrat', sans-serif;
 
 $large-screen: em(860) !default;
+$medium-screen: em(640) !default;
 
 body {
     background-color: $support-color-4;
@@ -35,19 +36,23 @@ a img {
 }
 
 // Home page styles
-.new-layout {
+.home-columns {
     display: flex;
     flex-flow: row wrap;
-    padding: 10px;
+    @include media($medium-screen) {
+      padding: 10px;
+    }
     color: white;
     background-color: #a6a6a6;
 
     > div {
-        margin: 10px;
+        @include media($medium-screen) {
+          margin: 10px;
+        }
 
         &.lab-column {
-          min-width: 500px;
-          flex: 5 1 500px;
+          min-width: 300px;
+            flex: 5 1 500px;
 
           .column-header {
             background-color: $base-accent-color;
@@ -59,23 +64,21 @@ a img {
           }
 
           .cards {
-            margin-top: 12px;
+            margin-left: -12px;
+            margin-top: -12px;
+            margin-bottom: 12px;
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: row wrap-reverse;
             .card {
               max-width: initial;
-              margin: 0 0 0 12px;
-              flex: 1 1 150px;
+              margin: 12px 0 0 12px;
+              flex: 1 1 200px;
               border-top: 6px solid $home-lab-accent-color;
               .card-image {
                 padding-top: 80%;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: top center;
-              }
-
-              &:first-child {
-                margin-left: 0;
               }
             }
           }
