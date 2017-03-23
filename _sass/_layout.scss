@@ -39,6 +39,7 @@ a img {
 .home-columns {
     display: flex;
     flex-flow: row wrap;
+    padding-bottom: 10px;
     @include media($medium-screen) {
       padding: 10px;
     }
@@ -689,11 +690,11 @@ section.events {
     }
 
     // The nav items
-    .nav-link:first-child {
-        @include media($horizontal-bar-mode) {
-            margin-left: $navigation-item-nudge;
-        }
-    }
+    // .nav-link:first-child {
+    //     @include media($horizontal-bar-mode) {
+    //         margin-left: $navigation-item-nudge;
+    //     }
+    // }
 
     ul li.nav-link {
         background: $navigation-background;
@@ -704,6 +705,7 @@ section.events {
         text-align: right;
         width: 100%;
         z-index: 9999;
+        position: relative;
 
         a {
             color: $navigation-color;
@@ -728,6 +730,23 @@ section.events {
             a {
                 padding-right: $navigation-item-padding;
             }
+        }
+
+        ul.nav-nested {
+          &.hidden {
+            display: none;
+          }
+          @include media($horizontal-bar-mode) {
+            position: absolute;
+            left: -12px;
+            padding-left: 12px;
+          }
+          background: $navigation-background;
+
+          li {
+            display: block;
+            text-align: left;
+          }
         }
     }
 

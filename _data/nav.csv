@@ -1,7 +1,11 @@
-title,permalink
-Home,/
-DRC Lab,/projects/
-DRC Forum,/events/
-Blog,/blog/
-People,/people/
-Contact,/contact/
+title,permalink,nested
+Home,/,false
+Lab,/projects/,false
+Projects,/projects/,true
+Tools,/tools/,true
+Collaborations,/collaborations/,true
+Forum,/events/,false
+Blog,/blog/,true
+Events,/events/,true
+People,/people/,false
+Contact,/contact/,false
