@@ -1,0 +1,8 @@
+<div class="flex-boxes">
+  {% for post in site.categories.tools %}
+    <a href="{{ post.url | prepend: site.baseurl }}" class="flex-box{% cycle ' flex-box-big', '', '' %}">
+      <h1 class="flex-title">{{ post.title }}</h1>
+      <p>{{ post.blurb }}</p>
+    </a>
+  {% endfor %}
+</div>

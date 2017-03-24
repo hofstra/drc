@@ -11,12 +11,18 @@ $(document).ready(function() {
     });
   });
 
+  $("ul.nav-nested").animate({
+    height: "hide"
+  }, 0);
   $("ul.navigation-menu > li.nav-link").hover(function() {
-    console.log("hover");
     $(this).addClass("nav-hover");
-    $(this).find("ul.nav-nested").removeClass("hidden");
+    $(this).find("ul.nav-nested").animate({
+      height: "show"
+    }, 200);
   }, function() {
     $(this).removeClass("nav-hover");
-    $(this).find("ul.nav-nested").addClass("hidden");
+    $(this).find("ul.nav-nested").animate({
+      height: "hide"
+    }, 0);
   });
 });

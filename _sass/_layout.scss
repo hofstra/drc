@@ -457,6 +457,16 @@ article.type-system-geometric {
         @include media($medium-screen) {
             font-size: 2em;
         }
+
+        &.section-header {
+          font-size: 1.6em;
+
+          margin-top: 1.5em;
+
+          &.first {
+            margin-top: 0;
+          }
+        }
     }
 
     h2, p.subhead {
@@ -551,6 +561,19 @@ article.type-system-geometric {
     ol {
         @extend %default-ol;
     }
+
+    ul.page-sections {
+      display: inline;
+      padding: 0;
+      white-space: nowrap;
+
+      li {
+        list-style: none;
+        display: inline;
+        font-size: 0.6em;
+        margin-left: 1em;
+      }
+    }
 }
 section.events {
     @extend article.type-system-geometric;
@@ -619,6 +642,7 @@ section.events {
         //border-bottom: 1px solid darken($navigation-background, 6%);
         min-height: $navigation-height;
         padding-left: 10px;
+        margin-left: -$navigation-submenu-padding;
     }
 
     // Mobile view
@@ -712,13 +736,14 @@ section.events {
             display: inline-block;
             outline: none;
             text-decoration: none;
+            padding-left: $navigation-submenu-padding;
 
             &:focus,
             &:hover {
                 color: $navigation-color-hover;
             }
             &:hover {
-                text-decoration: underline;
+                // text-decoration: underline;
             }
         }
 
@@ -732,20 +757,33 @@ section.events {
             }
         }
 
+        &.nav-hover {
+          .page-link {
+            @include media($horizontal-bar-mode) {
+              background: white;
+            }
+          }
+        }
+
         ul.nav-nested {
+          // height: 0;
           &.hidden {
-            display: none;
+            // display: none;
           }
           @include media($horizontal-bar-mode) {
             position: absolute;
             left: -12px;
-            padding-left: 12px;
+            margin-left: 12px;
           }
-          background: $navigation-background;
+          // background: $navigation-background;
+          background: white;
 
           li {
             display: block;
-            text-align: left;
+            @include media($horizontal-bar-mode) {
+              text-align: left;
+            }
+            line-height: $navigation-height * 0.75;
           }
         }
     }
@@ -1117,6 +1155,8 @@ section.events {
         @include flex-wrap(wrap);
         clear: both;
 
+    margin-left: -$flex-box-gutter;
+    margin-right: -$flex-box-gutter;
 
     .flex-box {
         @include transition (all 0.2s ease-in-out);

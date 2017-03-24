@@ -1,11 +1,11 @@
 title,permalink,nested
 Home,/,false
-Lab,/projects/,false
+Lab,/lab/,false
 Projects,/projects/,true
 Tools,/tools/,true
 Collaborations,/collaborations/,true
-Forum,/events/,false
-Blog,/blog/,true
+Forum,/forum/,false
 Events,/events/,true
+Blog,/blog/,true
 People,/people/,false
 Contact,/contact/,false
