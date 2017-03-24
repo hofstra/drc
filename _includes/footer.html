@@ -1,12 +1,12 @@
 <footer class="footer" role="contentinfo">
   <div class="footer-links">
     <ul>
-{% for page in site.data.nav limit:4 offset:0 %}
+{% for page in site.data.nav |  limit:5 offset:0 %}
       <li><a href="{{ page.permalink | prepend: site.baseurl }}">{{ page.title | remove_first: "DRC " }}</a></li>
 {% endfor %}
     </ul>
     <ul>
-{% for page in site.data.nav limit:3 offset:4 %}
+{% for page in site.data.nav | limit:5 offset:5 %}
       <li><a href="{{ page.permalink | prepend: site.baseurl }}">{{ page.title | remove_first: "DRC " }}</a></li>
 {% endfor %}
     </ul>
