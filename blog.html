@@ -5,13 +5,21 @@ permalink: /blog/
 tags: [work]
 ---
 
-<section>
-<div>
-  {% for post in site.categories.blog %}
-    <a href="{{ post.url | prepend: site.baseurl }}" class="">
-      <h2 class="title">{{ post.title }}</h1>
-    </a>
-	<p>{{ post.excerpt }}</p>
-  {% endfor %}
-</div>
+<section class="blog page-columns">
+  <div class="primary-column">
+    {% for post in site.categories.blog %}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="">
+        <h2 class="title">{{ post.title }}</h1>
+      </a>
+  	  <p>{{ post.excerpt }}</p>
+      <p><a href="{{ post.url | prepend: site.baseurl }}">Read more &rarr;</a></p>
+      {% unless forloop.last %}
+        <hr />
+      {% endunless %}
+    {% endfor %}
+  </div>
+  <div class="secondary-column twitter-embed">
+    <a class="twitter-timeline" href="https://twitter.com/hofstradrc">Tweets by hofstradrc</a>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
 </section>
