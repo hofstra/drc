@@ -8,45 +8,52 @@
 
   <div class="home-columns">
     <div class="lab-column">
-      <a href="{{ site.baseurl }}/projects/"><div class="column-header">
+      <a href="{{ site.baseurl }}/lab/"><div class="column-header">
         <h1>DRC Lab</h1>
         <p>Creating Projects and Tools.<br />&nbsp;</p>
       </div></a>
-      {% assign lab_feature = site.categories.lab_feature | first %}
-      {% if lab_feature %}
-        <div class="column-feature-wrapper" style="background: url('{{lab_feature.image | prepend: site.baseurl}}') no-repeat center left;">
-          <div class="column-feature">
-            <h2>{{ lab_feature.title }}</h2>
-            <p>{{ lab_feature.blurb }}</p>
-            <p><a href="{{ lab_feature.url | prepend: site.baseurl }}"><button>Learn more about the project</button></a></p>
+      <div class="featured-category">
+        {% assign lab_feature = site.categories.lab_feature | first %}
+        {% if lab_feature %}
+          <div class="column-feature-wrapper" style="background: url('{{lab_feature.image | prepend: site.baseurl}}') no-repeat center left;">
+            <div class="featured-category-header">
+              <h1>Featured projects</h1>
+            </div>
+            <div class="column-feature">
+              <h2>{{ lab_feature.title }}</h2>
+              <p>{{ lab_feature.blurb }}</p>
+              <p><a href="{{ lab_feature.url | prepend: site.baseurl }}"><button>Learn more about the project</button></a></p>
+            </div>
+          </div>
+        {% endif %}
+        <div class="featured-set">
+          <div class="cards">
+            {% assign projects = site.categories.projects | where:"feature",true  %}
+            {% for post in projects limit:3 sort: 'date' %}
+            <a class="card" href="{{ post.url | prepend: site.baseurl }}">
+              {% assign image_url = post.image %}
+              {% unless post.image %}
+                {% assign image_url = "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" %}
+              {% endunless %}
+              <div class="card-image" style="background-image: url('{{ image_url | prepend: site.baseurl }}');"></div>
+              <div class="card-header">
+                {{ post.title }}
+              </div>
+              <div class="card-copy">
+                {{ post.blurb }}
+              </div>
+            </a>
+            {% endfor %}
+          </div>
+          <div class="cards">
+            <a class="card" href="{{ site.baseurl }}/projects/">
+              <div class="card-header">View all projects &rarr;</div>
+            </a>
           </div>
         </div>
-      {% endif %}
-      <div class="cards">
-        {% assign projects = site.categories.projects | where:"feature",true  %}
-        {% for post in projects limit:3 sort: 'date' %}
-        <a class="card" href="{{ post.url | prepend: site.baseurl }}">
-          {% assign image_url = post.image %}
-          {% unless post.image %}
-            {% assign image_url = "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" %}
-          {% endunless %}
-          <div class="card-image" style="background-image: url('{{ image_url | prepend: site.baseurl }}');"></div>
-          <div class="card-header">
-            {{ post.title }}
-          </div>
-          <div class="card-copy">
-            {{ post.blurb }}
-          </div>
-        </a>
-        {% endfor %}
       </div>
-      <div class="cards">
-        <a class="card" href="{{ site.baseurl }}/projects/">
-          <div class="card-header">View all projects &rarr;</div>
-        </a>
-      </div>
-      <div class="toolkit">
-        <a href="{{ site.baseurl }}/tools/"><div class="toolkit-header">The DRC Toolkit</div></a>
+      <div class="featured-set toolkit">
+        <a href="{{ site.baseurl }}/tools/"><div class="featured-category-header"><h1>The DRC Toolkit</h1></div></a>
         <div class="cards">
           {% assign tools = site.categories.tools | where:"feature",true  %}
           {% for post in tools limit:3 sort: 'date' %}
@@ -73,32 +80,40 @@
       </div>
     </div>
     <div class="forum-column">
-      <a href="{{ site.baseurl }}/events/"><div class="column-header">
+      <a href="{{ site.baseurl }}/forum/"><div class="column-header">
         <h1>DRC Forum</h1>
         <p>Building Communities for Scholarship and Learning.</p>
       </div></a>
-      <div class="column-feature-wrapper" style="background: url('{{ site.baseurl }}/images/forum-home.jpg') no-repeat center center;">
-        <div class="column-feature">
-          <h2>DRExChange 2017</h2>
-          <p>Our annual DRExChange is at Hofstra University on March 23rd.</p>
-          <p><a href="{{ site.baseurl }}/events/"><button>Find out about our DRExChange</button></a></p>
+      <div class="featured-category">
+        <div class="column-feature-wrapper" style="background: url('{{ site.baseurl }}/images/forum-home.jpg') no-repeat center center;">
+          <div class="featured-category-header"><h1>Upcoming event</h1></div>
+          <div class="column-feature">
+            <h2>DRExChange 2017</h2>
+            <p>Our annual DRExChange is at Hofstra University on March 23rd.</p>
+            <p><a href="{{ site.baseurl }}/events/"><button>Find out about our DRExChange</button></a></p>
+          </div>
         </div>
       </div>
-      <div class="cards">
-        {% assign posts = site.categories.blog  %}
-        {% for post in posts limit:3 sort: 'date' %}
-        <a class="card" href="{{ post.url | prepend: site.baseurl }}">
-          <div class="card-header">
-            {{ post.title }}
-          </div>
-          <div class="card-copy">
-            {{ post.excerpt }}
-          </div>
-        </a>
-        {% endfor %}
-        <a class="card" href="{{ site.baseurl }}/blog/">
-          <div class="card-header">View all blog posts &rarr;</div>
-        </a>
+      <div class="featured-set toolkit">
+        <a href="{{ site.baseurl }}/blog/"><div class="featured-category-header"><h1>Blog</h1></div></a>
+        <div class="cards">
+          {% assign posts = site.categories.blog  %}
+          {% for post in posts limit:3 sort: 'date' %}
+          <a class="card" href="{{ post.url | prepend: site.baseurl }}">
+            <div class="card-header">
+              {{ post.title }}
+            </div>
+            <div class="card-copy">
+              {{ post.excerpt }}
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+        <div class="cards">
+          <a class="card" href="{{ site.baseurl }}/blog/">
+            <div class="card-header">View all blog posts &rarr;</div>
+          </a>
+        </div>
       </div>
     </div>
   </div>

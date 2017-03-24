@@ -53,7 +53,7 @@ a img {
 
         &.lab-column {
           min-width: 360px;
-            flex: 5 1 500px;
+          flex: 5 1 500px;
 
           .column-header {
             background-color: $base-accent-color;
@@ -64,47 +64,8 @@ a img {
             padding-right: 8em;
           }
 
-          .cards {
-            margin-left: -12px;
-            margin-top: -12px;
-            margin-bottom: 12px;
-            display: flex;
-            flex-flow: row wrap-reverse;
-            .card {
-              max-width: initial;
-              margin: 12px 0 0 12px;
-              flex: 1 1 200px;
-              border-top: 6px solid $home-lab-accent-color;
-              .card-image {
-                padding-top: 80%;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: top center;
-              }
-            }
-          }
-
-          .toolkit {
-            background-color: white;
-            margin-top: 12px;
-            border-top: 6px solid $highlight-color;
-            padding: ($base-spacing / 3) ($base-spacing / 2);
-
-            .toolkit-header {
-              color: $base-accent-color;
-              font-family: $montserrat;
-              font-size: 1.4em;
-              // line-height: 1.5em;
-              padding-bottom: ($base-spacing / 3);
-            }
-
-            .cards {
-              margin-top: 0;
-
-              .card {
-                border: none;
-              }
-            }
+          .featured-category-header {
+            background-color: transparentize($home-lab-accent-color, 0.3);
           }
         }
 
@@ -120,19 +81,82 @@ a img {
             background-color: transparentize(#111, 0.5);
           }
 
+          .featured-category-header {
+            background-color: transparentize($home-forum-accent-color, 0.3);
+          }
+
+          // .cards {
+          //   margin-top: 12px;
+          //
+          //   .card {
+          //     max-width: initial;
+          //     margin: 12px 0 0 0;
+          //     border-top: 6px solid $home-forum-accent-color;
+          //     display: block;
+          //
+          //     &:first-child {
+          //       margin-top: 0;
+          //     }
+          //   }
+          // }
+        }
+
+        .column-feature-wrapper {
+          position: relative;
+        }
+
+        .featured-category-header {
+          width: 100%;
+          margin-left: 0;
+          padding: 0.5em 4em;
+          position: absolute;
+          top: 0;
+
+          h1 {
+            font-family: $montserrat;
+            font-size: 1.6em;
+            font-weight: 400;
+            color: white;
+          }
+        }
+
+        .featured-set {
+          background-color: white;
+          margin-top: 0;
+          margin-bottom: 12px;
+          padding: 0 ($base-spacing / 2);
+          position: relative;
+
+          .featured-set-header {
+            color: $base-accent-color;
+            font-family: $montserrat;
+            font-size: 1.4em;
+            // line-height: 1.5em;
+            padding-bottom: ($base-spacing / 3);
+          }
+
           .cards {
-            margin-top: 12px;
+            margin-top: 0;
 
             .card {
-              max-width: initial;
-              margin: 12px 0 0 0;
-              border-top: 6px solid $home-forum-accent-color;
-              display: block;
-
-              &:first-child {
-                margin-top: 0;
-              }
+              border: none;
             }
+          }
+        }
+
+        .featured-set.toolkit {
+          padding-top: 3em;
+
+          .featured-category-header {
+            margin-left: -12px;
+          }
+        }
+
+        .featured-category {
+          margin-top: 6px;
+
+          .featured-set {
+            margin-top: -12px;
           }
         }
 
@@ -153,7 +177,7 @@ a img {
 
         .column-feature {
           padding: 6em 4em 0 4em;
-          min-height: 520px;
+          min-height: 460px;
 
           > * {
             padding-bottom: 1em;
@@ -173,6 +197,26 @@ a img {
               @include button(flat, $base-accent-color);
               @include button(flat, $highlight-color);
               padding: 0.7em 1em;
+          }
+        }
+
+        .cards {
+          margin-left: -12px;
+          margin-top: -12px;
+          margin-bottom: 12px;
+          display: flex;
+          flex-flow: row wrap-reverse;
+          .card {
+            max-width: initial;
+            margin: 12px 0 0 12px;
+            flex: 1 1 200px;
+            border-top: 6px solid $home-lab-accent-color;
+            .card-image {
+              padding-top: 80%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: top center;
+            }
           }
         }
     }
