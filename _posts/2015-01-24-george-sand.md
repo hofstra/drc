@@ -5,7 +5,7 @@ categories: projects
 tags: []
 author: "David A. Powell"
 published: true
-feature: true
+feature: false
 image: "/images/sand.png"
 date:   2015-02-02 21:46:19
 project_url: http://gsa.hofstradrc.org/
@@ -24,4 +24,3 @@ I would like to link up scholars directly to the usual electronic sites for rese
 In a second phase, I would like to make available to Sand scholars searchable documents, including manuscripts and modern editions of Sand's primary texts, with searchability possibility. A third phase would target the reproduction of Sand's manuscripts , also with searchability and browsability functions as well as comparison possibilities.
 
 Few literary sites that offer anything close to what I hope to achieve with the GSA website project. There are even fewer for French authors. Not only will the site provide unprecedented availability to scholars of the works of George Sand, but scholars of 19th-century French literature and history and, to a lesser degree, scholars of (French) literature in general, will also find useful components of the new site.
-

@@ -6,45 +6,176 @@
 <body{% if page.id!='' %} class="page-{{ page.id }}"{% endif %}>
   {% include header.html %}
 
-    <div class="hero">
-        <div class="hero-inner">
-            <div class="hero-copy"><div class="hero-copy-inner"><div>
-                <h1>Tracking Coyote: Trickster Myths and Trapper&rsquo;s Tales</h1>
-                <p>A critical archive of myths about the Native American Coyote and tales collected from animal trappers, who attempted to contain and in some cases eradicate the coyote in the 19th and 20th centuries.</p>
-                <p><a href="/projects/the-myth-of-coyote.html"><button>Learn more about the project</button></a></p>
-            </div></div></div><!--
-            --><div class="hero-copy"><div class="hero-copy-inner"><div>
-                <h1>DRC Forum</h1>
-                <p class="subhead">Building communities interested in pursuing digital scholarship and learning.</p>
-                <p>Our annual DRExChange is at Hofstra University on March 23rd.</p>
-                <p><a href="/events/"><button>Find out about our DRExChange</button></a></p>
-            </div></div></div>
-        </div>
-        {% comment %}
-          <div class="hero-copy">
-            {% assign projects = site.categories.projects | where:"feature",true %}
-            {% for post in projects limit:1 %}
-                {% if post.image %}
-                <style type="text/css">
-                  div.hero {
-                    background-image: url("{{ post.image }}");
-                  }
-                </style>
-                {% endif %}
-                <h1>{{ post.title }} </h1>
-                {{ post.excerpt }}
-                <p><a href="{{ post.url | prepend: site.baseurl }}"><button>Learn More about the Project</button></a></p>
-                {% if post.tool_url != "" %}
-                <p><a href="{{ post.tool_url | prepend: site.baseurl }}"><button>Learn More about the Tool</button></a></p>
-                {% endif %}
+  <div class="home-columns">
+    <div class="lab-column">
+      <a href="{{ site.baseurl }}/lab/"><div class="column-header">
+        <h1>DRC Lab</h1>
+        <p>Creating Projects and Tools.</p>
+      </div></a>
+      <div class="featured-category">
+        {% assign lab_feature = site.categories.lab_feature | first %}
+        {% if lab_feature %}
+          <div class="column-feature-wrapper" style="background: url('{{lab_feature.image | prepend: site.baseurl}}') no-repeat center left;">
+            <div class="featured-category-header">
+              <h1>Featured projects</h1>
+            </div>
+            <div class="column-feature">
+              <h2>{{ lab_feature.title }}</h2>
+              <p>{{ lab_feature.blurb }}</p>
+              <p><a href="{{ lab_feature.url | prepend: site.baseurl }}"><button>Learn more about the project</button></a></p>
+            </div>
+          </div>
+        {% endif %}
+        <div class="featured-set">
+          <div class="cards">
+            {% assign projects = site.categories.projects | where:"feature",true  %}
+            {% for post in projects limit:3 sort: 'date' %}
+            <a class="card" href="{{ post.url | prepend: site.baseurl }}">
+              {% assign image_url = post.image %}
+              {% unless post.image %}
+                {% assign image_url = "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" %}
+              {% endunless %}
+              <div class="card-image" style="background-image: url('{{ image_url | prepend: site.baseurl }}');"></div>
+              <div class="card-header">
+                {{ post.title }}
+              </div>
+              <div class="card-copy">
+                {{ post.blurb }}
+              </div>
+            </a>
             {% endfor %}
+          </div>
+          <div class="cards">
+            <a class="card" href="{{ site.baseurl }}/projects/">
+              <div class="card-header">View all projects &rarr;</div>
+            </a>
+          </div>
         </div>
-        {% endcomment %}
+      </div>
+      <div class="featured-set toolkit">
+        <a href="{{ site.baseurl }}/collaborations/"><div class="featured-category-header"><h1>DRC Collaborations: Special Collections at Hofstra</h1></div></a>
+        {% assign feature = site.categories.special-collections | where:"feature",true | first %}
+        <a href="{{ feature.url | prepend: site.baseurl }}">
+          <div class="card-wrapper-header">Featured collection: {{ feature.title }}</div>
+          <div class="card-wrapper-copy">{{ feature.excerpt }}</div>
+          <div class="cards">
+            {% for image in feature.images limit:2 %}
+              <div class="card"><img src="{{ site.baseurl }}/images/special-collections/{{ image }}"></div>
+            {% endfor %}
+          </div>
+        </a>
+        <div class="cards">
+          <a class="card" href="{{ site.baseurl }}/collaborations/">
+            <div class="card-header">View all highlighted collections &rarr;</div>
+          </a>
+        </div>
+      </div>
+      <div class="featured-set toolkit">
+        <a href="{{ site.baseurl }}/tools/"><div class="featured-category-header"><h1>The DRC Toolkit</h1></div></a>
+        <div class="cards">
+          {% assign tools = site.categories.tools | where:"feature",true  %}
+          {% for post in tools limit:3 sort: 'date' %}
+          <a class="card" href="{{ post.url | prepend: site.baseurl }}">
+            {% assign image_url = post.image %}
+            {% unless post.image %}
+              {% assign image_url = "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" %}
+            {% endunless %}
+            <div class="card-image" style="background-image: url('{{ image_url | prepend: site.baseurl }}');"></div>
+            <div class="card-header">
+              {{ post.title }}
+            </div>
+            <div class="card-copy">
+              {{ post.blurb }}
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+        <div class="cards">
+          <a class="card" href="{{ site.baseurl }}/tools/">
+            <div class="card-header">View all tools &rarr;</div>
+          </a>
+        </div>
+      </div>
     </div>
-
-  <section id="content">
-  {{ content }}
-  </section>
+    <div class="forum-column">
+      <a href="{{ site.baseurl }}/forum/"><div class="column-header">
+        <h1>DRC Forum</h1>
+        <p>Building Communities for Scholarship and Learning.</p>
+      </div></a>
+      <div class="featured-category">
+        <div class="column-feature-wrapper" style="background: url('{{ site.baseurl }}/images/forum-home.jpg') no-repeat center center;">
+          <div class="featured-category-header"><h1>Upcoming events</h1></div>
+          <div class="column-feature">
+            <h2>DREx 2017</h2>
+            <p>Our annual Digital Research Exchange (DREx) takes place at Hofstra’s Axinn Library and Mack Hall on Wednesday, April 26, 2017, from 11am to 4pm.</p>
+            <p><a href="{{ site.baseurl }}/events/"><button>Join us!</button></a></p>
+          </div>
+        </div>
+        <div class="featured-set">
+          <div class="cards">
+            {% assign posts = site.categories.news  %}
+            {% for post in posts limit:3 sort: 'date' %}
+            <a class="card" href="{{ post.url | prepend: site.baseurl }}">
+              <div class="card-header">
+                {{ post.title }}
+              </div>
+              <div class="card-copy">
+                {{ post.excerpt }}
+              </div>
+            </a>
+            {% endfor %}
+          </div>
+          <div class="cards">
+            <a class="card" href="{{ site.baseurl }}/news/">
+              <div class="card-header">View all news &rarr;</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="featured-set toolkit">
+        <a href="{{ site.baseurl }}/blog/"><div class="featured-category-header"><h1>Blog</h1></div></a>
+        <div class="cards">
+          {% assign posts = site.categories.blog  %}
+          {% for post in posts limit:3 sort: 'date' %}
+          <a class="card" href="{{ post.url | prepend: site.baseurl }}">
+            <div class="card-header">
+              {{ post.title }}
+            </div>
+            <div class="card-copy">
+              {{ post.excerpt }}
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+        <div class="cards">
+          <a class="card" href="{{ site.baseurl }}/blog/">
+            <div class="card-header">View all blog posts &rarr;</div>
+          </a>
+        </div>
+      </div>
+      <div class="featured-set toolkit">
+        <a href="{{ site.baseurl }}/interviews/"><div class="featured-category-header"><h1>Interviews</h1></div></a>
+        <div class="cards">
+          {% assign posts = site.categories.interviews  %}
+          {% for post in posts limit:3 sort: 'date' %}
+          <a class="card" href="{{ post.url | prepend: site.baseurl }}">
+            <div class="card-header">
+              {{ post.title }}
+            </div>
+            <div class="card-copy">
+              {{ post.excerpt }}
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+        <div class="cards">
+          <a class="card" href="{{ site.baseurl }}/interviews/">
+            <div class="card-header">View all interviews &rarr;</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section id="footer">
   {% include footer.html %}

@@ -1,9 +1,16 @@
 ---
 layout: default
 ---
-{% if page.header_image!='' %}<div class="page-header-image"><img src="{{ page.header_image }}" /></div>{% endif %}
+{% if page.header_image!='' %}<div class="page-header-image"><img src="{{ page.header_image | prepend: site.baseurl }}" /></div>{% endif %}
 <article class="type-system-geometric">
-<h1>{{ page.title }}</h1>
+<h1>{{ page.title }}
+{% if page.sections %}
+  <ul class="page-sections">
+    {% for section in page.sections %}
+      <a href="#{{ section }}"><li>{{ section | capitalize }}</li></a>
+    {% endfor %}
+  </ul>
+{% endif %}</h1>
   {{ content }}
 {% if page.author!='' %}<hr>
 <p class="author">Author: {{ page.author }}</p>{% endif %}

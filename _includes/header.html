@@ -1,8 +1,8 @@
     <div class="logo-header-wrapper">
         <div class="logo-header">
-            <a href="/"><img src="/images/drc.logo.horizontal.png" alt="Digital Research Center at Hofstra" height="42" width="247" /></a>
+            <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/drc.logo.horizontal.png" alt="Digital Research Center at Hofstra" height="42" width="247" /></a>
             <a href="#" id="js-navigation-mobile-menu" class="mobile-toggle">MENU</a>
-            <p id="description">Finding Digital Solutions to Problems in Scholarship and Learning</p>
+            <p id="description">Digital Solutions to Problems in Scholarship and Learning</p>
         </div>
 
     </div>
@@ -12,9 +12,17 @@
             <div class="navigation-wrapper">
                 <nav role="navigation">
                     <ul id="js-navigation-menu" class="navigation-menu show">
+                      <li class="hidden"><ul class="nav-nested hidden">
                         {% for page in site.data.nav %}
+                            {% if page.nested == "false" %}
+                              </ul>
+                            </li>
+                            {% endif %}
                             {% if page.title %}
-                            <li class="nav-link"><a class="page-link" href="{{ page.permalink | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                            <li class="nav-link"><a class="page-link" href="{{ page.permalink | prepend: site.baseurl }}">{{ page.title | remove_first: "DRC " }}</a>
+                              {% if page.nested == "false" %}
+                              <ul class="nav-nested hidden">
+                              {% endif %}
                             {% endif %}
                         {% endfor %}
                     </ul>

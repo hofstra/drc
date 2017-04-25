@@ -11,7 +11,7 @@ layout: default
 
 <style type="text/css">
     .post-image {
-        background-image: url('{{page.image}}');
+        background-image: url('{{page.image | prepend: site.baseurl }}');
     }
     .post-image a {
         width:1088px;
@@ -38,9 +38,9 @@ layout: default
     <div class="person">
         <div class="photo">
         {% if person.photo!='' %}
-            <img src="{{ person.photo }}" />
+            <img src="{{ person.photo | prepend: site.baseurl }}" />
         {% else %}
-            <img src="/images/people/nophoto.jpg" />
+            <img src="{{ site.baseurl }}/images/people/nophoto.jpg" />
         {% endif %}
         </div>
         <div class="details">

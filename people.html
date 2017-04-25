@@ -12,9 +12,9 @@ tags: [general, information]
         <div class="person">
             <div class="photo">
                 {% if person.photo!='' %}
-                    <img width="100" src="{{ person.photo }}" />
+                    <img width="100" src="{{ person.photo | prepend: site.baseurl }}" />
                 {% else %}
-                    <img width="100" src="/images/people/nophoto.jpg" />
+                    <img width="100" src="{{ site.baseurl }}/images/people/nophoto.jpg" />
                 {% endif %}
             </div>
             <div class="details">
@@ -22,7 +22,7 @@ tags: [general, information]
                 <ul>
                     {% for post in site.posts %}
                         {% if post.lead_person == person.id %}
-                            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                            <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
@@ -35,9 +35,9 @@ tags: [general, information]
         <div class="person">
             <div class="photo">
                 {% if person.photo!='' %}
-                    <img width="100" src="{{ person.photo }}" />
+                    <img width="100" src="{{ person.photo | prepend: site.baseurl }}" />
                 {% else %}
-                    <img width="100" src="/images/people/nophoto.jpg" />
+                    <img width="100" src="{{ site.baseurl }}/images/people/nophoto.jpg" />
                 {% endif %}
             </div>
             <div class="details">
@@ -45,7 +45,7 @@ tags: [general, information]
                 <ul>
                     {% for post in site.posts %}
                         {% if post.lead_person == person.id %}
-                            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                            <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>

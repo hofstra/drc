@@ -1,0 +1,10 @@
+{% for post in site.categories.blog %}
+  <a href="{{ post.url | prepend: site.baseurl }}" class="">
+    <h2 class="title">{{ post.title }}</h1>
+  </a>
+  <p>{{ post.excerpt }}</p>
+  <p><a href="{{ post.url | prepend: site.baseurl }}">Read more &rarr;</a></p>
+  {% unless forloop.last %}
+    <hr />
+  {% endunless %}
+{% endfor %}

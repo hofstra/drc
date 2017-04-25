@@ -4,6 +4,7 @@ title: "AMP: Journal of Digital Literature"
 categories: projects
 tags: []
 author: Janet Kaplan
+project_url: 'http://amp.hofstradrc.org/'
 date: 2015-01-21 21:46:19
 published: true
 feature: false
