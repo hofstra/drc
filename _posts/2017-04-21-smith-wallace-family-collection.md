@@ -1,6 +1,6 @@
 ---
 layout: special-collection
-title: Smith/Wallace Family Collection, 1767-1996. (Bulk Dates: 1880-1940). 20.7 cubic ft.
+title: 'Smith/Wallace Family Collection, 1767-1996. (Bulk Dates: 1880-1940). 20.7 cubic ft.'
 categories: special-collections
 published: true
 feature: false
@@ -12,4 +12,3 @@ The collection consists mainly of material from the Smith Family of Freeport, NY
 
 Notable items include letters from Nellie Russell, who was a friend of Ella Boynton Smith and a missionary in China during the Boxer Rebellion, and a large collection of genealogical research material, including a framed genealogical sampler.
 <!-- more -->
-
