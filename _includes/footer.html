@@ -1,13 +1,13 @@
 <footer class="footer" role="contentinfo">
   <div class="footer-links">
     <ul>
-{% for page in site.data.nav limit:4 offset:0 %}
-      <li><a href="{{ page.permalink | prepend: site.baseurl }}">{{ page.title }}</a></li>
+{% for page in site.data.nav |  limit:5 offset:0 %}
+      <li><a href="{{ page.permalink | prepend: site.baseurl }}">{{ page.title | remove_first: "DRC " }}</a></li>
 {% endfor %}
     </ul>
     <ul>
-{% for page in site.data.nav limit:3 offset:4 %}
-      <li><a href="{{ page.permalink | prepend: site.baseurl }}">{{ page.title }}</a></li>
+{% for page in site.data.nav | limit:5 offset:5 %}
+      <li><a href="{{ page.permalink | prepend: site.baseurl }}">{{ page.title | remove_first: "DRC " }}</a></li>
 {% endfor %}
     </ul>
     <ul>
@@ -20,7 +20,7 @@
   <p>{{site.description}}</p>
 </footer>
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/javascripts/main.js"></script>
 
 <!--
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

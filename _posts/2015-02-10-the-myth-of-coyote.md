@@ -2,7 +2,7 @@
 layout: post
 title: "Tracking Coyote: Trickster Myths and Trappers' Tales"
 date: 2015-01-20
-categories: projects
+categories: projects lab_feature
 tags: []
 project_url: 'http://hofstra.github.io/coyote'
 image: /images/coyote.jpg
@@ -11,6 +11,7 @@ feature: false
 lead_person: "7"
 people:
   - "7"
+blurb: "A critical archive of myths about the Native American Coyote and tales collected from animal trappers, who attempted to contain and in some cases eradicate the coyote in the 19th and 20th centuries."
 
 ---
 

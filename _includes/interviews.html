@@ -1,0 +1,10 @@
+{% for post in site.categories.interviews %}
+  <a href="{{ post.url | prepend: site.baseurl }}" class="">
+    <h2 class="title">{{ post.title }}</h1>
+  </a>
+  <p>{{ post.content }}</p>
+  <p><a href="{{ post.url | prepend: site.baseurl }}">See more &rarr;</a></p>
+  {% unless forloop.last %}
+    <hr />
+  {% endunless %}
+{% endfor %}
