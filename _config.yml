@@ -4,7 +4,7 @@ email: jamiefolsom@gmail.com
 # description: > # this means to ignore newlines until "baseurl:"
 #   The DRC collaborates with faculty at Hofstra in the design and implementation of digital solutions to challenges in humanistic inquiry.
 description: The DRC collaborates with faculty at Hofstra in the design and implementation of digital solutions to challenges in humanistic inquiry.
-baseurl: "/drc" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://hofstradrc.org/"
 twitter_username: hofstradrc
 github_username:  hofstra
