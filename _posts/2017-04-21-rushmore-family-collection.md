@@ -1,6 +1,6 @@
 ---
 layout: special-collection
-title: Rushmore Family Collection, 1811-1997. 10.0 cubic ft.
+title: Rushmore Family Collection, 1811-1997
 categories: special-collections
 published: true
 feature: false
@@ -12,4 +12,3 @@ The Rushmores were a prominent Quaker farm family in Nassau County for over 250 
 
 Collection spans the years 1811-1997, and includes account books, autograph books, genealogies, guest books, letters, manuscripts, maps, news clippings, notebooks, notes, photo albums (including cartes de visite albums), photographs, postcards, printed materials, publications, school papers, scrapbooks, typescripts, and videotapes.
 <!-- more -->
-

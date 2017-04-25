@@ -1,6 +1,6 @@
 ---
 layout: special-collection
-title: African Americans on Long Island Collection, 1779- . 0.8 cubic ft.
+title: African Americans on Long Island Collection, 1779-current
 categories: special-collections
 published: true
 feature: true
