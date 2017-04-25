@@ -1,8 +1,45 @@
+<h1 class="collaborations-header">Special Collections at Hofstra</h3>
+<h2 class="collaborations-header-description">"The Long Island Studies Institute, a cooperative endeavor of Hofstra University and Nassau County,
+is a major center for the study of Long Island local and regional history. The Institute's research
+facility—which is open to scholars, teachers, students, and the general public—includes:
+<ul>
+  <li>Archival Collections</li>
+  <li>Books</li>
+  <li>Photographs</li>
+  <li>Newspapers</li>
+  <li>Maps</li>
+  <li>Census Records</li>
+  <li>Genealogies</li>
+  <li>Government Documents</li>
+  <li>Manuscripts</li>
+  <li>Audiovisual Materials</li>
+</ul>
+The various collections within the Institute include the Nassau County Museum's Reference
+Collection, Hofstra University's James N. MacLean American Legion Memorial Collection, as well as
+other collections donated by individual Long Island families and businesses. These resources
+constitute a rich repository for local history research."</h2>
+<div class="collaborations-header-attribution">— <a href="http://www.hofstra.edu/pdf/library/libspc_lisi_collections.pdf">Long Island Studies Institute Collections Finding Aid</a></div>
 <div class="flex-boxes">
-  {% for post in site.categories.collaborations %}
+  {% assign feature = site.categories.special-collections | where:"feature",true | first %}
+  <a href="{{ feature.url | prepend: site.baseurl }}" class="flex-box flex-box-big special-collections-feature">
+    <h3>Featured collection:</h3>
+    <h1 class="flex-title">{{ feature.title }}</h1>
+    <p>{{ feature.excerpt }}</p>
+    <div class="feature-images">
+      {% for image in feature.images limit:2 %}
+        <div><img src="{{ site.baseurl }}/images/special-collections/{{ image }}"></div>
+      {% endfor %}
+    </div>
+  </a>
+</div>
+<div class="flex-boxes">
+  {% assign collections = site.categories.special-collections | sort: "title" %}
+  {% for post in collections %}
+    {% unless post.feature == true %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="flex-box{% cycle ' flex-box-big', '', '' %}">
       <h1 class="flex-title">{{ post.title }}</h1>
-      <p>{{ post.blurb }}</p>
+      <p>{{ post.excerpt }}</p>
     </a>
+    {% endunless %}
   {% endfor %}
 </div>

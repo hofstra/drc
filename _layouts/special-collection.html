@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article class="type-system-geometric">
+
+<h1>{{ page.title }}</h1>
+
+<div>
+  {{ page.content | markdownify }}
+</div>
+
+<div class="special-collections-images">
+  {% for image in page.images %}
+    <div><img class="special-collections-image" data-index="{{ forloop.index }}" src="{{ site.baseurl }}/images/special-collections/{{ image }}"></div>
+  {% endfor %}
+</div>
+
+</article>
+
+{% for image in page.images %}
+  <div class="image-modal" id="special-collection-{{ forloop.index }}">
+    <div class="image-modal-inset"><img src="{{ site.baseurl }}/images/special-collections/{{ image }}"></div>
+  </div>
+{% endfor %}
