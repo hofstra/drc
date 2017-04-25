@@ -1,6 +1,6 @@
 ---
 layout: special-collection
-title: Woman's Forum of Nassau County Scrapbook Collection, 1957-1995. 3.0 cubic ft.
+title: Woman's Forum of Nassau County Scrapbook Collection, 1957-1995
 categories: special-collections
 published: true
 feature: false
@@ -12,4 +12,3 @@ The Woman’s Forum of Nassau County was founded in 1944 by Elizabeth Bass Goldi
 
 The thirteen scrapbooks that make up this collection document the activities of the organization from 1957-1995. They were compiled by Bernice F. Weshler, who was the publicity director and a past president of the Woman’s Forum.
 <!-- more -->
-

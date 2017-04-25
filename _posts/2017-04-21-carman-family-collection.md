@@ -1,6 +1,6 @@
 ---
 layout: special-collection
-title: Carman Family Collection, 1679-1942. 12.7 cubic ft.
+title: Carman Family Collection, 1679-1942
 categories: special-collections
 published: true
 feature: false
@@ -15,4 +15,3 @@ Included in the collection, which spans the years 1679-1942, are business record
 
 Noteworthy items include a small number of slave indentures and other documents that make reference to slaves.
 <!-- more -->
-

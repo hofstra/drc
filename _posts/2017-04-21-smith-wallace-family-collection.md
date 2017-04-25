@@ -1,6 +1,6 @@
 ---
 layout: special-collection
-title: 'Smith/Wallace Family Collection, 1767-1996. (Bulk Dates: 1880-1940). 20.7 cubic ft.'
+title: 'Smith/Wallace Family Collection, 1767-1996'
 categories: special-collections
 published: true
 feature: false

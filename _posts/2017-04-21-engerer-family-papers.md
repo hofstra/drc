@@ -1,6 +1,6 @@
 ---
 layout: special-collection
-title: Engerer Family Papers, c.1920-1964, 2008. 1.5 cubic ft.
+title: Engerer Family Papers, c.1920-1964, 2008
 categories: special-collections
 published: true
 feature: false
@@ -12,4 +12,3 @@ Captain Ernest Engerer immigrated to the United States from Germany circa 1914, 
 
 The collection includes family and business photographs; performance flyers, programs, posters, advertisements; business papers; news clippings; and an oral history.
 <!-- more -->
-

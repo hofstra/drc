@@ -1,6 +1,6 @@
 ---
 layout: special-collection
-title: Hispanic/Latino Collection, 1951- . 24.0 cubic ft.
+title: Hispanic/Latino Collection, 1951-current
 categories: special-collections
 published: true
 feature: false
@@ -15,4 +15,3 @@ Collection includes biographical information, CDs, correspondence, musical instr
 
 Noteworthy among the collection are research materials about the racially charged incidents at Farmingville, Círculo de la Hispanidad's lawsuit against the City of Long Beach, and the battle against English-only legislation that was waged by the Coalition for English Plus.
 <!-- more -->
-

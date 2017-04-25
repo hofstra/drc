@@ -1,6 +1,6 @@
 ---
 layout: special-collection
-title: Post Family Collection, 1796-1935. 3.6 cubic ft.
+title: Post Family Collection, 1796-1935
 categories: special-collections
 published: true
 feature: false
@@ -12,4 +12,3 @@ The bulk of this collection is comprised of letters written to Long Island Quake
 
 Particularly noteworthy items include the following: a photographic print of abolitionist Mary H. (Post) Hallowell (daughter of Isaac Post), whose home in Rochester, NY, was a stop on the Underground Railroad; a framed silhouette print of the famous Quaker preacher, Elias Hicks; a framed engraving of Lucretia Mott; and indentures related to the sale of land in Merrick as well as other locations. Also notable are photographic prints of Joseph Post, Mary Post, Esther Robbins, Willet S. Robbins, Mary Willis, Henry Willis, and Isaac Post.
 <!-- more -->
-

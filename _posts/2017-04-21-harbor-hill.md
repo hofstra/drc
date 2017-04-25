@@ -1,6 +1,6 @@
 ---
 layout: special-collection
-title: Harbor Hill, Mackay/Hechler Collection 1900-2000. 5.4 cubic ft.
+title: Harbor Hill, Mackay/Hechler Collection 1900-2000
 categories: special-collections
 published: true
 feature: false
@@ -12,4 +12,3 @@ Harbor Hill was a Gold Coast estate located in Roslyn, Long Island, New York, an
 
 The collection is composed of correspondence, newspaper clippings, bills, photographs of members of the Mackay and Hechler families and Harbor Hill. There are also many collected pieces of ephemera and maps.
 <!-- more -->
-
