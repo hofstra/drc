@@ -1,8 +1,10 @@
 ---
-layout: page
 title: Resources
-permalink: /resources/
-tags: [general, information]
+permalink: "/resources/"
+layout: page
+tags:
+- general
+- information
 author: John Bryant
 ---
 

@@ -1,16 +1,14 @@
 ---
+title: Access Scholar
+date: 2015-01-25 21:46:19 Z
+categories:
+- projects
 layout: post
-title: "Access Scholar"
-categories: projects
-date: 2015-01-25 21:46:19
-tags: []
-published: true
 feature: false
 image: "/images/access_scholar.png"
-lead_person: "5"
+lead_person: '5'
 people:
-  - "5"
-
+- '5'
 ---
 
 Digital scholarship presents a tremendous but far-too-often unrealized opportunity for physically challenged scholars and students.

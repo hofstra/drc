@@ -1,11 +1,12 @@
 ---
+title: MELCamp5
+date: 2015-04-30 17:00:00 Z
+published: false
+categories:
+- events
 layout: event
-title: "MELCamp5"
-date: 2015-04-30 17:00:00
 display_date: April 30 to May 2, 2015
 location: MIT
-categories: events
-published: false
 link: http://mel.hofstra.edu/mel-camp5-agenda.html
 ---
 

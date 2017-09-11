@@ -1,12 +1,13 @@
 ---
-layout: special-collection
 title: Hispanic/Latino Collection, 1951-current
-categories: special-collections
-published: true
+date: 2017-04-21 08:09:00 Z
+categories:
+- special-collections
+layout: special-collection
 feature: false
-date: 2017-04-21-08:09:00
-excerpt_separator: <!-- more -->
+excerpt_separator: "<!-- more -->"
 ---
+
 The collection was established with the help of grant funding from the NYS Archives’ Documentary Heritage Program. It is comprised of materials that document the rich history and culture of Long Island’s diverse Hispanic/Latino population. Included among those who have contributed materials to the collection are social workers, service providers, immigration lawyers, artists, teachers, athletes, filmmakers, civic leaders, and members of dance and music groups.
 <!-- more -->
 

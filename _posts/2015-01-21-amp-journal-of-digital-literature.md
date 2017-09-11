@@ -1,19 +1,17 @@
 ---
+title: 'AMP: Journal of Digital Literature'
+date: 2015-01-21 21:46:19 Z
+categories:
+- projects
 layout: post
-title: "AMP: Journal of Digital Literature"
-categories: projects
-tags: []
 author: Janet Kaplan
-project_url: 'http://amp.hofstradrc.org/'
-date: 2015-01-21 21:46:19
-published: true
+project_url: http://amp.hofstradrc.org/
 feature: false
-<!-- project_url: http://amp.hofstradrc.org/ -->
-lead_person: "4"
+"<!-- project_url": http://amp.hofstradrc.org/ -->
+lead_person: '4'
 people:
-  - "4"
+- '4'
 image: "/images/amp.png"
-
 ---
 
 As traditional print publishing continues on the downswing, a number of highly regarded literary journals are now published in online editions that supplement or complement their print volumes; some journals, especially those that publish innovative and experimental work, are now publishing exclusively on the Internet.  Innovative and experimental texts lend themselves especially to the plasticity of the digital medium. A digital platform can offer exciting possibilities for open field forms and for text accompanied by images, sound or video.

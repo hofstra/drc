@@ -1,17 +1,15 @@
 ---
-layout: post
 title: The Digital Van Mander
-categories: projects
-tags: []
+date: 2015-01-02 21:46:19 Z
+categories:
+- projects
+layout: post
 author: Martha Hollander
-published: true
 feature: false
 image: "/images/van-mander.jpg"
-date: 2015-01-02 21:46:19
-lead_person: "8"
+lead_person: '8'
 people:
-  - "8"
-
+- '8'
 ---
 
 The Digital Van Mander will offer the first authoritative English translation of Karel van

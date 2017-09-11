@@ -1,18 +1,16 @@
 ---
-layout: post
 title: George Sand Association
-categories: projects
-tags: []
-author: "David A. Powell"
-published: true
+date: 2015-02-02 21:46:19 Z
+categories:
+- projects
+layout: post
+author: David A. Powell
 feature: false
 image: "/images/sand.png"
-date:   2015-02-02 21:46:19
 project_url: http://gsa.hofstradrc.org/
-lead_person: "10"
+lead_person: '10'
 people:
-  - "10"
-
+- '10'
 ---
 
 The mission of the George Sand Association (GSA) site is to unite scholars and aficionados of the 19th-century French author. We use the site to announce upcoming international conferences and panels at other conference programs; in addition we publish pertinent announcements and sometimes short documents concerning plans, projects, and publications concerning work on George Sand's works.

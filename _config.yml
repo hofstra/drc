@@ -1,16 +1,22 @@
-# Site settings
+---
 title: The Digital Research Center at Hofstra
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: jamiefolsom@gmail.com
-# description: > # this means to ignore newlines until "baseurl:"
-#   The DRC collaborates with faculty at Hofstra in the design and implementation of digital solutions to challenges in humanistic inquiry.
-description: The DRC collaborates with faculty at Hofstra in the design and implementation of digital solutions to challenges in humanistic inquiry.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://hofstradrc.org/"
+description: The DRC collaborates with faculty at Hofstra in the design and implementation
+  of digital solutions to challenges in humanistic inquiry.
+baseurl: ''
+url: http://hofstradrc.org/
 twitter_username: hofstradrc
-github_username:  hofstra
-
-# Build settings
+github_username: hofstra
 markdown: kramdown
-excerpt_separator: <!--more-->
+excerpt_separator: "<!--more-->"
 permalink: none
-exclude: ['drc-website.sublime-project']
+exclude:
+- drc-website.sublime-project
