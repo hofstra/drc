@@ -78,7 +78,12 @@
           {% assign tools = site.categories.tools | where:"feature",true  %}
 		  {% assign sortedTools = tools | sort: 'date' %}
           {% for post in sortedTools limit:3 %}
-          <a class="card" href="{{ post.url | prepend: site.baseurl }}">
+
+          <!--
+		  	AS: Temp disabled link until we have content
+		  	<a class="card" href="{{ post.url | prepend: site.baseurl }}">
+		  -->	
+		  <a class="card" href="{{ site.baseurl }}/tools/">
             {% assign image_url = post.image %}
             {% unless post.image %}
               {% assign image_url = "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" %}
