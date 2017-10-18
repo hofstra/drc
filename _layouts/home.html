@@ -5,7 +5,7 @@
 
 <body{% if page.id!='' %} class="page-{{ page.id }}"{% endif %}>
   {% include header.html %}
-
+{% include searchbox %}
   <div class="home-columns">
     <div class="lab-column">
       <a href="{{ site.baseurl }}/lab/"><div class="column-header">
@@ -82,7 +82,7 @@
           <!--
 		  	AS: Temp disabled link until we have content
 		  	<a class="card" href="{{ post.url | prepend: site.baseurl }}">
-		  -->	
+		  -->
 		  <a class="card" href="{{ site.baseurl }}/tools/">
             {% assign image_url = post.image %}
             {% unless post.image %}

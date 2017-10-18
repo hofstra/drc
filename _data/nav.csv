@@ -11,3 +11,5 @@ News,/news/,true
 Interviews,/interviews/,true
 People,/people/,false
 Contact,/contact/,false
+Search,/search.html,false
+Toggle Contrast,javascript:toggleContrast();,false
