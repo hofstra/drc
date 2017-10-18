@@ -7,6 +7,7 @@ layout: post
 feature: false
 image: "/images/access_scholar.png"
 lead_person: '5'
+project_url: http://hofstra.github.io/access-scholar/
 people:
 - '5'
 ---

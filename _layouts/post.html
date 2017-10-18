@@ -53,11 +53,14 @@ layout: default
     {% comment %}
     {% if page.people!='' %}
     <h2>Project Team:</h2>
-    <ul class="project-people">{% for person in site.data.people | sort: "last_name" %}{% if page.people contains person.id %}<li>{{ person.first_name }} {{ person.last_name }}</li>{% endif %}{% endfor %}</ul>
+    <ul class="project-people">
+		{% assign sortedPeople = site.data.people | sort: "last_name" %}
+		{% for person in sortedPeople %}
+		{% if page.people contains person.id %}<li>{{ person.first_name }} {{ person.last_name }}</li>{% endif %}{% endfor %}</ul>
     {% endif %}
     {% endcomment %}
 {% endif %}
-{% if page.project_url!='' %}
+{% if page.project_url and page.project_url !="" and page.project_url !=nil %}
 <div class="person">
     <a href="{{ page.project_url }}" target="{{ page.title | slugify }}"><button>View Project</button></a>
 </div>

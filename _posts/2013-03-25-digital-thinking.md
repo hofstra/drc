@@ -3,7 +3,7 @@ title: 'Digital Thinking/Critical Thinking: Building the Humanities at Hofstra'
 date: 2013-03-25 12:00:00 Z
 categories:
 - events
-layout: event
+layout: events
 display_date: October 24-25, 2013
 location: Hofstra University
 link: http://hofstradrc.org/pdf/digithink.pdf
