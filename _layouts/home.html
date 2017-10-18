@@ -29,7 +29,9 @@
         <div class="featured-set">
           <div class="cards">
             {% assign projects = site.categories.projects | where:"feature",true  %}
-            {% for post in projects limit:3 sort: 'date' %}
+
+			{% assign sortedProjects = projects | sort: 'date' %}
+            {% for post in sortedProjects limit:3 %}
             <a class="card" href="{{ post.url | prepend: site.baseurl }}">
               {% assign image_url = post.image %}
               {% unless post.image %}
@@ -74,7 +76,8 @@
         <a href="{{ site.baseurl }}/tools/"><div class="featured-category-header"><h1>The DRC Toolkit</h1></div></a>
         <div class="cards">
           {% assign tools = site.categories.tools | where:"feature",true  %}
-          {% for post in tools limit:3 sort: 'date' %}
+		  {% assign sortedTools = tools | sort: 'date' %}
+          {% for post in sortedTools limit:3 %}
           <a class="card" href="{{ post.url | prepend: site.baseurl }}">
             {% assign image_url = post.image %}
             {% unless post.image %}
@@ -114,7 +117,9 @@
         <div class="featured-set">
           <div class="cards">
             {% assign posts = site.categories.news  %}
-            {% for post in posts limit:3 sort: 'date' %}
+
+			{% assign sortedPosts = posts | sort: 'date' %}
+            {% for post in sortedPosts limit:3 %}
             <a class="card" href="{{ post.url | prepend: site.baseurl }}">
               <div class="card-header">
                 {{ post.title }}
@@ -136,7 +141,10 @@
         <a href="{{ site.baseurl }}/blog/"><div class="featured-category-header"><h1>Blog</h1></div></a>
         <div class="cards">
           {% assign posts = site.categories.blog  %}
-          {% for post in posts limit:3 sort: 'date' %}
+		  {% assign sortedPosts = posts | sort: 'date' %}
+		  {% for post in sortedPosts limit:3 %}
+
+
           <a class="card" href="{{ post.url | prepend: site.baseurl }}">
             <div class="card-header">
               {{ post.title }}
@@ -157,7 +165,9 @@
         <a href="{{ site.baseurl }}/interviews/"><div class="featured-category-header"><h1>Interviews</h1></div></a>
         <div class="cards">
           {% assign posts = site.categories.interviews  %}
-          {% for post in posts limit:3 sort: 'date' %}
+
+		  {% assign sortedPosts = posts | sort: 'date' %}
+		  {% for post in sortedPosts limit:3 %}
           <a class="card" href="{{ post.url | prepend: site.baseurl }}">
             <div class="card-header">
               {{ post.title }}

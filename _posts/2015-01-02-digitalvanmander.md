@@ -8,6 +8,7 @@ author: Martha Hollander
 feature: false
 image: "/images/van-mander.jpg"
 lead_person: '8'
+project_url: 
 people:
 - '8'
 ---
