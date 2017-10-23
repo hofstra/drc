@@ -4,10 +4,10 @@
 	{% assign myid = include.id %}
 {% endif %}
 
-<form action="{{ site.baseurl }}/search.html" method="get">
+<form name="{{ myid }}" action="{{ site.baseurl }}/search.html" method="get" onsubmit="return window.formValidator();">
 <div class="searchbox">
    <div class="search">
-      <input type="text" name="query" class="searchTerm" id="{{ myid }}" placeholder="{{ include.placeholder }}">
+      <input type="text" name="query" class="searchTerm typeahead" id="{{ myid }}" placeholder="{{ include.placeholder }}">
       <button type="submit" value="search" class="searchButton">
         <span class="fa fa-search" aria-hidden="true"></span>
      </button>

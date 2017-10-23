@@ -5,21 +5,11 @@
 // After DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
 
-	// Bounce if we're not on the search results page
-	if(!document.getElementById('search-results')){
-		return;
-	}
-	
 	// Parse keyword from GET vars
 	var searchTerm = getQueryVariable('query');
-
-	// If there is no search term (FIXME: We can handle this better)
-	if(!searchTerm){
-		document.getElementById('largeSearch').setAttribute("value", ' ');
-		document.getElementById('search-results').innerHTML='';
-	}
-
-	if (searchTerm) {
+	if (!searchTerm) {
+		displayFailureMessage('');
+	}else{
 
 		// Set the search boxes on the page to have the searchterm
 		/*
@@ -53,12 +43,24 @@ document.addEventListener('DOMContentLoaded', function() {
 		// Run the search
 		for (var key in window.store) {
 			//NOTE: Any boost should go here, IE idx.search('title:foo^10')
-			var results = idx.search(searchTerm);
+			try {
+    			var results = idx.search(searchTerm);
+
+			// Search supports things like category: title:
+			}catch(error) {
+				displayFailureMessage(error.message);
+				return;
+			}
+
 			displaySearchResults(results, window.store);
 		}
 
 
 	}
+
+
+
+
 
 	// Display the search results on the page
 	function displaySearchResults(results, store) {
@@ -73,9 +75,24 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 			searchResults.innerHTML = appendString;
 		} else {
-			searchResults.innerHTML = '<div class="searchMsgWrapper"><div class="searchMsg">No results found for "' + searchTerm + '"</div></div>';
+			displayFailureMessage('No results found for "' + searchTerm+'"');
+		}
+
+
+	}
+
+
+	// Inject a failure message onto the screen (into #search-results)
+	function displayFailureMessage(message){
+		var searchResults = document.getElementById('search-results');
+		if(searchResults == null){return;}
+		if($.trim(message) == ''){
+			searchResults.innerHTML = '';
+		}else{
+			searchResults.innerHTML = '<div class="searchMsgWrapper"><div class="searchMsg">'+message+'</div></div>';
 		}
 	}
+
 
 	// Helper: Parse GET vars
 	function getQueryVariable(variable) {
@@ -88,6 +105,5 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 		}
 	}
-
 
 }, false);

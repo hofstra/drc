@@ -3,12 +3,17 @@
 
 @charset "utf-8";
 
+/* FontAwesome icon font http://fontawesome.io/ */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 	"bourbon/bourbon",
 	"neat/neat",
 	"base/base",
     "hofstra/hofstra",
-	"layout",
-	"search"
+	"layout"
 ;
+
+@import "_search";
+@import "_search_typeahead";
