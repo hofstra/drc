@@ -1,0 +1,56 @@
+---
+---
+/*
+
+highContrast.scss
+
+This is the high contrast stylesheet that is added to the site
+via toggleContrast.js.
+
+It can contain anything but should really just be overrides for the main.css
+
+*/
+.home-columns {
+  background-color: white; }
+
+.column-header,
+.featured-category-header {
+  background-color: black !important; }
+
+button {
+  background-color: white !important; }
+
+.card-header {
+  color: black !important;
+  font-weight: bold; }
+
+a {
+  color: black !important; }
+
+
+.flex-title{
+  color:black !important;
+  font-weight: bold;
+
+}
+
+.flex-box p{
+  color:black !important;
+
+}
+
+.flex-box{
+  border:1px solid black !important;
+}
+
+.searchButton {
+	top:-.1rem;
+	border: 3px solid black !important;
+	background: black !important;
+	color: white !important;
+}
+
+article{
+  background-color:white !important;
+  color:black !important;
+}

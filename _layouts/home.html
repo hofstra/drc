@@ -5,7 +5,7 @@
 
 <body{% if page.id!='' %} class="page-{{ page.id }}"{% endif %}>
   {% include header.html %}
-
+{% include searchbox %}
   <div class="home-columns">
     <div class="lab-column">
       <a href="{{ site.baseurl }}/lab/"><div class="column-header">

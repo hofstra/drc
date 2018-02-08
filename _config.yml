@@ -18,5 +18,8 @@ github_username: hofstra
 markdown: kramdown
 excerpt_separator: "<!--more-->"
 permalink: none
+include:
+- _pages
 exclude:
 - drc-website.sublime-project
+- preflight
