@@ -4,6 +4,7 @@ date: 2015-02-02 21:46:19 Z
 categories:
 - projects
 layout: post
+tags: [completed, research]
 author: David A. Powell
 feature: false
 image: "/images/sand.png"

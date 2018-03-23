@@ -5,6 +5,7 @@ categories:
 - projects
 layout: post
 author: Janet Kaplan
+tags: [completed, teaching]
 project_url: http://amp.hofstradrc.org/
 feature: false
 "<!-- project_url": http://amp.hofstradrc.org/ -->

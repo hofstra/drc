@@ -5,6 +5,7 @@ categories:
 - projects
 layout: post
 feature: false
+tags: [in-progress, research]
 image: "/images/access_scholar.png"
 lead_person: '5'
 project_url: http://hofstra.github.io/access-scholar/

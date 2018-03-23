@@ -1,3 +1,25 @@
+$small-font-size: 0.75em;
+$badges: (
+  "in-progress": #fff6bf,
+  "completed": #999,
+  "teaching": #fbe3e4,
+  "future": #e5edf8,
+  "research": #e6efc2,
+) !default;
+
+@each $badge-type, $color in $badges {
+  .badge-#{$badge-type} {
+    background-color: $color;
+    border-radius: $small-font-size * 5;
+    color: darken($color, 60%);
+    display: inline-block;
+    font-size: $small-font-size;
+    line-height: 1;
+    padding: 0.4em 1.2em;
+  }
+}
+
+
 @mixin button ($style: simple, $base-color: #4294f0, $text-size: inherit, $padding: 7px 18px) {
 
   @if type-of($style) == string and type-of($base-color) == color {

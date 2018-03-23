@@ -4,6 +4,7 @@ date: 2015-01-19 00:00:00 Z
 categories:
 - projects
 layout: post
+tags: [future, research, teaching]
 author: Mario Ruiz
 feature: false
 image: "/images/011-theda-bara-theredlist.jpg"

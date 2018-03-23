@@ -4,11 +4,12 @@ date: 2015-01-02 21:46:19 Z
 categories:
 - projects
 layout: post
+tags: [in-progress, research]
 author: Martha Hollander
 feature: false
 image: "/images/van-mander.jpg"
 lead_person: '8'
-project_url: 
+project_url:
 people:
 - '8'
 ---

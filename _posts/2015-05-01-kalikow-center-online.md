@@ -5,6 +5,7 @@ categories:
 - projects
 layout: post
 image: "/images/kalikow.jpg"
+tags: [future, research, teaching]
 feature: false
 lead_person: '6'
 project_url: http://www.hofstra.edu/Academics/Colleges/HCLAS/presidential-studies/

@@ -5,6 +5,7 @@ categories:
 - projects
 layout: post
 image: "/images/itinerary.png"
+tags: [in-progress, research, teaching]
 project_url: http://hofstra.github.io/itinerary
 tool_url: https://github.com/hofstra/itinerary/blob/master/docs/write-up.md
 feature: true

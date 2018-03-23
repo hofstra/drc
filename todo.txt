@@ -1,0 +1,5 @@
+# TODO: Add upcoming/completed/in progress projects category
+# TODO: Add SEEDD to upcoming projects category (Blacklight+Spotlight)
+# TODO: Add Nichols Diary upcoming projects category (itinerary)
+# TODO: Add MEL/Octoroon to upcoming project (Textlab)
+# TODO: Represent pedagogy/research and inside tools/outside/reuse

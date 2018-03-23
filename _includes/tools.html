@@ -6,7 +6,14 @@
 	-->
 	<a class="flex-box{% cycle ' flex-box-big', '', '' %}">
       <h1 class="flex-title">{{ post.title }}</h1>
-      <p>{{ post.blurb }}</p>
+      <p>
+        {{ post.blurb }}
+        <div id="category-badges">
+          {% for tag in post.tags %}
+          <span class="badge-{{ tag }}">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </p>
     </a>
   {% endfor %}
 </div>
