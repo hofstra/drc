@@ -8,11 +8,13 @@
       <h1 class="flex-title">{{ post.title }}</h1>
       <p>
         {{ post.blurb }}
+        {% comment %}
         <div id="category-badges">
           {% for tag in post.tags %}
           <span class="badge-{{ tag }}">{{ tag }}</span>
           {% endfor %}
         </div>
+        {% endcomment %}
       </p>
     </a>
   {% endfor %}

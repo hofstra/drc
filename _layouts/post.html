@@ -28,11 +28,13 @@ layout: default
 <div class="project-has-people" style="">
 {{ page.content | markdownify }}
 
+{% comment %}
 <div id="category-badges">
   {% for tag in page.tags %}
   <span class="badge-{{ tag }}">{{ tag }}</span>
   {% endfor %}
 </div>
+{% endcomment %}
 </div>
 
 <div class="project-sidebar-people" style="">
