@@ -114,8 +114,8 @@
         <div class="column-feature-wrapper" style="background: url('{{ site.baseurl }}/images/forum-home.jpg') no-repeat center center;">
           <div class="featured-category-header"><h1>Events</h1></div>
           <div class="column-feature">
-            <h2>DREx 2017</h2>
-            <p>Our annual Digital Research Exchange (DREx) takes place at Hofstra’s Axinn Library and Mack Hall on Wednesday, April 26, 2017, from 11am to 4pm.</p>
+            <h2>DREx 2018: "Experiential Pedagogy: Archive and Classroom"</h2>
+            <p>Our annual Digital Research Exchange (DREx) takes place at Hofstra’s Axinn Library and Mack Hall on Wednesday, April 25, 2018, from 11am to 4pm.</p>
             <p><a href="{{ site.baseurl }}/forum/"><button>Visit the Forum</button></a></p>
           </div>
         </div>
@@ -146,7 +146,7 @@
         <a href="{{ site.baseurl }}/blog/"><div class="featured-category-header"><h1>Blog</h1></div></a>
         <div class="cards">
           {% assign posts = site.categories.blog  %}
-		  {% assign sortedPosts = posts | sort: 'date' %}
+		  {% assign sortedPosts = posts | sort: 'date desc' %}
 		  {% for post in sortedPosts limit:3 %}
 
 
