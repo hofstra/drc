@@ -1,4 +1,4 @@
-{% for post in site.categories.blog %}
+{% for post in site.categories.blog limit:1 %}
   <a href="{{ post.url | prepend: site.baseurl }}" class="">
     <h2 class="title">{{ post.title }}</h1>
   </a>

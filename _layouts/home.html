@@ -145,9 +145,9 @@
       <div class="featured-set toolkit">
         <a href="{{ site.baseurl }}/blog/"><div class="featured-category-header"><h1>Blog</h1></div></a>
         <div class="cards">
-          {% assign posts = site.categories.blog  %}
+          {% assign posts = site.categories.blog %}
 		  {% assign sortedPosts = posts | sort: 'date desc' %}
-		  {% for post in sortedPosts limit:3 %}
+		  {% for post in sortedPosts limit:1 %}
 
 
           <a class="card" href="{{ post.url | prepend: site.baseurl }}">
