@@ -6,7 +6,7 @@ categories:
 - lab_feature
 layout: post
 tags: [in-progress, research, teaching]
-project_url: http://hofstra.github.io/coyote
+project_url: https://hofstra.github.io/coyote
 image: "/images/coyote.jpg"
 feature: false
 lead_person: '7'
